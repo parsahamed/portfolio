@@ -47,7 +47,9 @@ export type ProjectVisualKind =
 
 export type ProjectVisual = {
   kind: ProjectVisualKind;
-  label: string;
+  label?: string;
+  caption?: string;
+  orientation?: "desktop" | "mobile" | "diagram" | "document";
   src: string;
 };
 

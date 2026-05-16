@@ -147,7 +147,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Supported 400+ users with reporting, dashboard design, dynamic forms, and collaboration in a 24/7 refinery operation"
           ],
           visuals: [
-            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-6.png"},
+            {kind: "dashboard", caption: "KPI dashboard", orientation: "desktop", src: "/projects/pms/screen-pms-6.png"}
           ]
         },
         {
@@ -183,7 +183,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Delivered a clear reporting layer for management and oversight"
           ],
           visuals: [
-            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/sima-sekan/screen-dashboard-sima.png"},
+            {kind: "dashboard", caption: "KPI dashboard", orientation: "desktop", src: "/projects/sima-sekan/screen-dashboard-sima.png"}
           ]
         },
         {
@@ -202,7 +202,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Helped build connected product experiences in a complex enterprise setting"
           ],
           visuals: [
-            {kind: "dashboard", label: "Product Screenshot", src: "/projects/my-irancell/screen.png"}
+            {kind: "mobile", caption: "Mobile product screen", orientation: "mobile", src: "/projects/my-irancell/screen.png"}
           ]
         },
         {
@@ -221,7 +221,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Improved mobile responsiveness and frontend consistency across devices"
           ],
           visuals: [
-            {kind: "pwa", label: "PWA", src: "/projects/hoofer/responsive-grid.png"},
+            {kind: "responsive", caption: "Responsive UI", orientation: "desktop", src: "/projects/hoofer/responsive-grid.png"}
           ]
         }
       ]
@@ -292,14 +292,14 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Reporting & Business Impact"
           ],
           visuals: [
-            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-1.png"},
-            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-2.png"},
-            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-3.png"},
-            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-4.png"},
-            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-5.png"},
-            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-6.png"},
-            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-7.png"},
-            {kind: "architecture", label: "Architecture Diagram", src: "/projects/pms/architecture.png"},
+            {kind: "forms", caption: "Log entry screen", orientation: "desktop", src: "/projects/pms/screen-pms-1.png"},
+            {kind: "forms", caption: "Dynamic forms", orientation: "desktop", src: "/projects/pms/screen-pms-2.png"},
+            {kind: "dashboard", caption: "Dashboard designer", orientation: "desktop", src: "/projects/pms/screen-pms-3.png"},
+            {kind: "workflow", caption: "Shift report", orientation: "desktop", src: "/projects/pms/screen-pms-4.png"},
+            {kind: "chat", caption: "Chat / collaboration", orientation: "desktop", src: "/projects/pms/screen-pms-5.png"},
+            {kind: "dashboard", caption: "KPI dashboard", orientation: "desktop", src: "/projects/pms/screen-pms-6.png"},
+            {kind: "impact", caption: "Reporting & business impact", orientation: "desktop", src: "/projects/pms/screen-pms-7.png"},
+            {kind: "architecture", caption: "Architecture diagram", orientation: "diagram", src: "/projects/pms/architecture.png"}
           ]
         },
         {
@@ -363,8 +363,8 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "High-visibility management and governance use"
           ],
           visuals: [
-            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/sima-sekan/screen-dashboard-sima.png"},
-            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/sima-sekan/screen-dashboard-sima-2.png"},
+            {kind: "dashboard", caption: "KPI dashboard", orientation: "desktop", src: "/projects/sima-sekan/screen-dashboard-sima.png"},
+            {kind: "dashboard", caption: "Performance dashboard", orientation: "desktop", src: "/projects/sima-sekan/screen-dashboard-sima-2.png"}
           ]
         },
         {
@@ -397,8 +397,8 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Long-term extensibility around operational needs"
           ],
           visuals: [
-            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/crm/Picture1.png"},
-            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/crm/Picture2.png"},
+            {kind: "dashboard", caption: "CRM record screen", orientation: "document", src: "/projects/crm/Picture1.png"},
+            {kind: "workflow", caption: "CRM workflow view", orientation: "document", src: "/projects/crm/Picture2.png"}
           ]
         },
         {
@@ -462,8 +462,10 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Ongoing modernization within a live product environment"
           ],
           visuals: [
-            {kind: "pwa", label: "PWA", src: "/projects/hoofer/responsive-grid.png"},
-            {kind: "pwa", label: "PWA", src: "/projects/hoofer/responsive-data-input.png"},
+            {kind: "legacy", caption: "Legacy modernization", orientation: "desktop", src: "/projects/hoofer/legacy-modernization.png"},
+            {kind: "pwa", caption: "PWA", orientation: "desktop", src: "/projects/hoofer/responsive-grid.png"},
+            {kind: "android", caption: "Android TWA", orientation: "mobile", src: "/projects/hoofer/android-twa.png"},
+            {kind: "responsive", caption: "Responsive UI", orientation: "desktop", src: "/projects/hoofer/responsive-data-input.png"}
           ]
         }
       ]
@@ -661,7 +663,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "پشتیبانی از بیش از ۴۰۰ کاربر با گزارش‌گیری، طراحی داشبورد، فرم‌های پویا و همکاری تیمی در عملیات 24/7 پالایشگاه"
           ],
           visuals: [
-            {kind: "dashboard", label: "اسکرین‌شات داشبورد", src: "/projects/pms/screen-pms-6.png"},
+            {kind: "dashboard", caption: "داشبورد KPI", orientation: "desktop", src: "/projects/pms/screen-pms-6.png"},
           ]
         },
         {
@@ -697,7 +699,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "تحویل لایه گزارش‌گیری شفاف برای مدیریت و نظارت"
           ],
           visuals: [
-            {kind: "dashboard", label: "اسکرین‌شات داشبورد", src: "/projects/sima-sekan/screen-dashboard-sima.png"},
+            {kind: "dashboard", caption: "داشبورد KPI", orientation: "desktop", src: "/projects/sima-sekan/screen-dashboard-sima.png"},
           ]
         },
         {
@@ -716,7 +718,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "ساخت تجربه‌های متصل در یک بستر سازمانی پیچیده"
           ],
           visuals: [
-            {kind: "dashboard", label: "نمای محصول", src: "/projects/my-irancell/screen.png"}
+            {kind: "mobile", caption: "نمای موبایل محصول", orientation: "mobile", src: "/projects/my-irancell/screen.png"}
           ]
         },
         {
@@ -735,7 +737,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "بهبود واکنش‌گرایی موبایل و یکپارچگی تجربه فرانت‌اند در دستگاه‌های مختلف"
           ],
           visuals: [
-            {kind: "pwa", label: "PWA", src: "/projects/hoofer/responsive-grid.png"},
+            {kind: "responsive", caption: "رابط کاربری Responsive", orientation: "desktop", src: "/projects/hoofer/responsive-grid.png"},
           ]
         }
       ]
@@ -806,14 +808,14 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "گزارش‌گیری و اثر کسب‌وکاری"
           ],
           visuals: [
-            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-1.png"},
-            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-2.png"},
-            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-3.png"},
-            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-4.png"},
-            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-5.png"},
-            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-6.png"},
-            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-7.png"},
-            {kind: "architecture", label: "نمودار معماری", src: "/projects/pms/architecture.png"},
+            {kind: "forms", caption: "صفحه ثبت لاگ", orientation: "desktop", src: "/projects/pms/screen-pms-1.png"},
+            {kind: "forms", caption: "فرم‌های پویا", orientation: "desktop", src: "/projects/pms/screen-pms-2.png"},
+            {kind: "dashboard", caption: "طراح داشبورد", orientation: "desktop", src: "/projects/pms/screen-pms-3.png"},
+            {kind: "workflow", caption: "گزارش شیفت", orientation: "desktop", src: "/projects/pms/screen-pms-4.png"},
+            {kind: "chat", caption: "چت / همکاری", orientation: "desktop", src: "/projects/pms/screen-pms-5.png"},
+            {kind: "dashboard", caption: "داشبورد KPI", orientation: "desktop", src: "/projects/pms/screen-pms-6.png"},
+            {kind: "impact", caption: "گزارش‌گیری و اثر کسب‌وکاری", orientation: "desktop", src: "/projects/pms/screen-pms-7.png"},
+            {kind: "architecture", caption: "نمودار معماری", orientation: "diagram", src: "/projects/pms/architecture.png"},
           ]
         },
         {
@@ -877,8 +879,8 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "استفاده مدیریتی با حساسیت بالا"
           ],
           visuals: [
-            {kind: "dashboard", label: "اسکرین‌شات داشبورد", src: "/projects/sima-sekan/screen-dashboard-sima.png"},
-            {kind: "dashboard", label: "اسکرین‌شات داشبورد", src: "/projects/sima-sekan/screen-dashboard-sima-2.png"},
+            {kind: "dashboard", caption: "داشبورد KPI", orientation: "desktop", src: "/projects/sima-sekan/screen-dashboard-sima.png"},
+            {kind: "dashboard", caption: "داشبورد عملکرد", orientation: "desktop", src: "/projects/sima-sekan/screen-dashboard-sima-2.png"},
           ]
         },
         {
@@ -911,8 +913,8 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "توسعه‌پذیری بلندمدت بر مبنای نیازهای عملیاتی"
           ],
           visuals: [
-            {kind: "dashboard", label: "اسکرین‌شات داشبورد", src: "/projects/crm/Picture1.png"},
-            {kind: "dashboard", label: "اسکرین‌شات داشبورد", src: "/projects/crm/Picture2.png"},
+            {kind: "dashboard", caption: "نمای رکورد CRM", orientation: "document", src: "/projects/crm/Picture1.png"},
+            {kind: "workflow", caption: "نمای Workflow در CRM", orientation: "document", src: "/projects/crm/Picture2.png"},
           ]
         },
         {
@@ -976,8 +978,10 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "نوسازی تدریجی در بستر یک محصول زنده"
           ],
           visuals: [
-            {kind: "pwa", label: "PWA", src: "/projects/hoofer/responsive-grid.png"},
-            {kind: "pwa", label: "PWA", src: "/projects/hoofer/responsive-data-input.png"},
+            {kind: "legacy", caption: "نوسازی Legacy", orientation: "desktop", src: "/projects/hoofer/legacy-modernization.png"},
+            {kind: "pwa", caption: "PWA", orientation: "desktop", src: "/projects/hoofer/responsive-grid.png"},
+            {kind: "android", caption: "Android TWA", orientation: "mobile", src: "/projects/hoofer/android-twa.png"},
+            {kind: "responsive", caption: "رابط کاربری Responsive", orientation: "desktop", src: "/projects/hoofer/responsive-data-input.png"},
           ]
         }
       ]
