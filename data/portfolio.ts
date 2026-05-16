@@ -8,7 +8,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
     brand: "Hamed Parsa",
     metaTitle: "Hamed Parsa | Senior Full-Stack Engineer & Enterprise Architect",
     metaDescription:
-      "Senior full-stack engineer and enterprise software architect with 20+ years of experience building industrial platforms, BI systems, telecom products, and AI-driven applications.",
+      "Senior full-stack engineer and enterprise software architect with 20+ years of experience building industrial platforms, BI systems, telecom products, SaaS systems, and AI-driven applications.",
     nav: [
       {href: "#about", label: "About"},
       {href: "#experience", label: "Experience"},
@@ -22,7 +22,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
       eyebrow: "Enterprise Systems · Product Engineering · Technical Leadership",
       headline: "Senior Full-Stack Engineer & Enterprise Software Architect",
       subheadline:
-        "20+ years building enterprise platforms, industrial systems, AI-powered products, BI solutions, and scalable web applications.",
+        "20+ years building enterprise platforms, industrial systems, AI-powered products, BI solutions, telecom products, and scalable web applications.",
       ctaPrimary: "View Projects",
       ctaSecondary: "Contact Me",
       ctaResume: "Download Resume",
@@ -34,25 +34,25 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
     },
     about: {
       eyebrow: "About",
-      title: "A system thinker focused on durable software and operational clarity",
+      title: "Founder, architect, and product-minded engineer focused on durable software",
       description:
-        "I design platforms that survive real-world complexity. My work sits at the intersection of product, architecture, and delivery: enterprise systems, AI-assisted workflows, industrial operations, dashboards, and full-stack products built for long-term use.",
+        "I design platforms that survive real-world complexity. My work sits at the intersection of entrepreneurship, enterprise architecture, product thinking, and delivery: operational software, BI systems, telecom products, SaaS applications, and emerging AI-assisted platforms built for long-term use.",
       pillars: [
         {
-          title: "Platform Architecture",
-          description: "Designing extensible foundations for enterprise workflows, integrations, and product evolution."
+          title: "Founder & Architecture Owner",
+          description: "Building and leading products with end-to-end ownership across strategy, architecture, execution, and long-term technical direction."
         },
         {
           title: "Operational Software",
-          description: "Building tools that support production environments, decision-making, reporting, and day-to-day execution."
+          description: "Designing systems for industrial operations, reporting, workflow execution, decision-making, and day-to-day production realities."
         },
         {
-          title: "Product-Minded Engineering",
-          description: "Balancing technical rigor with adoption, usability, and the actual constraints of business operations."
+          title: "Enterprise & Product Engineering",
+          description: "Balancing technical rigor with adoption, usability, scalability, and the actual constraints of enterprise and SaaS environments."
         },
         {
-          title: "Leadership & Mentoring",
-          description: "Guiding teams through architecture decisions, delivery discipline, and stronger engineering practices."
+          title: "Leadership Across Domains",
+          description: "Leading teams and architecture across enterprise software, telecom products, modern SaaS systems, and AI-oriented product work."
         }
       ]
     },
@@ -60,11 +60,11 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
       eyebrow: "Experience",
       title: "A career built around enterprise platforms and high-responsibility systems",
       description:
-        "From early desktop and GIS systems to national dashboards, telecom products, SaaS checkout flows, and modern full-stack applications.",
+        "From early desktop and GIS systems to enterprise platforms, national KPI systems, telecom products, SaaS checkout flows, and modern AI-oriented applications.",
       items: [
         {
           company: "Rahavard Informatics Toos",
-          role: "Software Engineer · Team Lead",
+          role: "Software Engineer / Technical Lead",
           summary:
             "Delivered operational software across web and desktop stacks while introducing disciplined engineering practices.",
           achievements: [
@@ -75,29 +75,18 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         },
         {
           company: "Dorj IT",
-          role: "Senior Full-Stack Engineer · Platform Builder",
+          role: "Founder & Enterprise Software Architect",
           summary:
-            "Designed and delivered business-critical systems for BI, CRM, workflow, and industrial operations.",
+            "Founded and led Dorj IT, focusing on enterprise software, BI platforms, industrial operational systems, workflow management, CRM solutions, and national-scale KPI aggregation platforms.",
           achievements: [
-            "Built BI platforms, dashboards, CRM systems, and workflow engines",
-            "Developed the Production Management Platform used in industrial environments",
-            "Focused on operational software, reporting, forms, collaboration, and system extensibility"
-          ]
-        },
-        {
-          company: "National KPI Platforms",
-          role: "Architect · Lead Engineer",
-          summary:
-            "Led architecture and implementation for nationwide KPI aggregation and scoring platforms.",
-          achievements: [
-            "Built SEKAN and SIMA aggregation platforms for national reporting",
-            "Designed API integration flows, retry mechanisms, and scoring logic",
-            "Created dashboard systems for large-scale monitoring and analysis"
+            "Led architecture, development, product strategy, and technical direction across enterprise projects in utility, refinery, and industrial sectors",
+            "Built BI platforms, enterprise dashboards, CRM solutions, workflow platforms, industrial systems, and the Production Management Platform (PMS)",
+            "Delivered SIMA, SEKAN, dashboard builder capabilities, and national KPI aggregation systems as Dorj IT projects"
           ]
         },
         {
           company: "MTN Irancell",
-          role: "Frontend Team Lead · Architecture Contributor",
+          role: "Frontend Team Lead / Software Architect",
           summary:
             "Worked on one of the region's largest telecom ecosystems with responsibility across architecture and frontend delivery.",
           achievements: [
@@ -115,6 +104,17 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Delivered checkout and payment-related product capabilities",
             "Worked across Angular, NestJS, and modern API-driven product flows",
             "Contributed to scalable SaaS patterns in a distributed remote team"
+          ]
+        },
+        {
+          company: "Hoofer",
+          role: "AI Product Engineer",
+          summary:
+            "Working on a modern AI-assisted product with scalable frontend/backend architecture and a product-oriented engineering mindset.",
+          achievements: [
+            "Built AI-assisted product flows with a modern SaaS mindset",
+            "Worked across scalable frontend and backend architecture for fast product iteration",
+            "Applied product-focused engineering to usability, extensibility, and real-world adoption"
           ]
         }
       ]
@@ -192,6 +192,22 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Contributed to a large-scale telecom product with significant reach",
             "Supported architecture and frontend team leadership",
             "Helped build connected product experiences in a complex enterprise setting"
+          ]
+        },
+        {
+          title: "Hoofer",
+          description:
+            "A modern AI-assisted product built with a product-first mindset, combining scalable frontend/backend architecture with fast iteration and SaaS-style delivery.",
+          architecture: [
+            "Angular/NestJS-oriented application architecture for clean product evolution",
+            "AI-assisted workflows integrated into a modern full-stack product surface",
+            "Scalable frontend/backend boundaries designed for iteration, maintainability, and growth"
+          ],
+          technologies: ["Angular", "NestJS", "TypeScript", "AI-Assisted Workflows", "SaaS Architecture"],
+          achievements: [
+            "Positioned as a modern product engineering effort rather than a traditional enterprise dashboard",
+            "Balanced architecture quality with fast iteration and product usability",
+            "Extended experience into AI-oriented product building"
           ]
         }
       ]
@@ -289,7 +305,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           problem:
             "National KPI programs required reliable aggregation of data from multiple systems, but the upstream integrations were inconsistent, delayed, and operationally hard to monitor.",
           role:
-            "I led architecture and implementation for the aggregation, scoring, and dashboard layers, including resilience patterns for unstable integrations.",
+            "While leading Dorj IT, I directed architecture and implementation for the aggregation, scoring, and dashboard layers, including resilience patterns for unstable integrations.",
           architecture: [
             "API aggregation services with retry and scheduled synchronization patterns",
             "Normalization and scoring pipeline for KPI evaluation",
@@ -430,7 +446,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
     brand: "حامد پارسا",
     metaTitle: "حامد پارسا | مهندس ارشد فول‌استک و معمار نرم‌افزار سازمانی",
     metaDescription:
-      "مهندس ارشد فول‌استک و معمار نرم‌افزار سازمانی با بیش از ۲۰ سال تجربه در ساخت پلتفرم‌های صنعتی، سامانه‌های هوش تجاری، محصولات مخابراتی و راهکارهای مبتنی بر هوش مصنوعی.",
+      "مهندس ارشد فول‌استک و معمار نرم‌افزار سازمانی با بیش از ۲۰ سال تجربه در ساخت پلتفرم‌های صنعتی، سامانه‌های هوش تجاری، محصولات مخابراتی، SaaS و راهکارهای مبتنی بر هوش مصنوعی.",
     nav: [
       {href: "#about", label: "درباره من"},
       {href: "#experience", label: "تجربه"},
@@ -444,7 +460,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
       eyebrow: "سامانه‌های سازمانی · مهندسی محصول · رهبری فنی",
       headline: "مهندس ارشد فول‌استک و معمار نرم‌افزار سازمانی",
       subheadline:
-        "بیش از ۲۰ سال تجربه در ساخت پلتفرم‌های سازمانی، سامانه‌های صنعتی، محصولات مبتنی بر هوش مصنوعی، راهکارهای BI و اپلیکیشن‌های وب مقیاس‌پذیر.",
+        "بیش از ۲۰ سال تجربه در ساخت پلتفرم‌های سازمانی، سامانه‌های صنعتی، محصولات مبتنی بر هوش مصنوعی، راهکارهای BI، محصولات مخابراتی و اپلیکیشن‌های وب مقیاس‌پذیر.",
       ctaPrimary: "مشاهده پروژه‌ها",
       ctaSecondary: "ارتباط با من",
       ctaResume: "دانلود رزومه",
@@ -456,25 +472,25 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
     },
     about: {
       eyebrow: "درباره من",
-      title: "نگاه سیستمی برای ساخت نرم‌افزارهای ماندگار و شفاف",
+      title: "موسس، معمار و مهندس محصول‌محور برای ساخت نرم‌افزارهای ماندگار",
       description:
-        "من پلتفرم‌هایی طراحی می‌کنم که بتوانند پیچیدگی واقعی کسب‌وکار را تحمل کنند. تمرکز کاری من در مرز بین محصول، معماری و اجراست: سامانه‌های سازمانی، گردش‌کارهای مبتنی بر هوش مصنوعی، عملیات صنعتی، داشبوردها و محصولات فول‌استکی که برای استفاده بلندمدت ساخته می‌شوند.",
+        "من پلتفرم‌هایی طراحی می‌کنم که بتوانند پیچیدگی واقعی کسب‌وکار را تحمل کنند. تمرکز کاری من در مرز بین کارآفرینی، معماری سازمانی، نگاه محصول‌محور و اجراست: نرم‌افزارهای عملیاتی، سامانه‌های BI، محصولات مخابراتی، اپلیکیشن‌های SaaS و پلتفرم‌های نوین مبتنی بر هوش مصنوعی که برای استفاده بلندمدت ساخته می‌شوند.",
       pillars: [
         {
-          title: "معماری پلتفرم",
-          description: "طراحی زیرساخت‌های توسعه‌پذیر برای گردش‌کارهای سازمانی، یکپارچه‌سازی‌ها و تکامل محصول."
+          title: "کارآفرینی و مالکیت معماری",
+          description: "ساخت و رهبری محصولات با مالکیت سرتاسری بر استراتژی، معماری، اجرا و جهت‌گیری فنی بلندمدت."
         },
         {
           title: "نرم‌افزار عملیاتی",
-          description: "ساخت ابزارهایی برای پشتیبانی از تولید، گزارش‌گیری، تصمیم‌سازی و اجرای روزمره عملیات."
+          description: "طراحی سامانه‌هایی برای عملیات صنعتی، گزارش‌گیری، اجرای Workflow، تصمیم‌سازی و واقعیت‌های روزمره تولید."
         },
         {
-          title: "مهندسی محصول‌محور",
-          description: "ترکیب دقت فنی با قابلیت استفاده، پذیرش کاربر و محدودیت‌های واقعی کسب‌وکار."
+          title: "مهندسی سازمانی و محصول",
+          description: "ترکیب دقت فنی با قابلیت استفاده، مقیاس‌پذیری و محدودیت‌های واقعی محیط‌های سازمانی و SaaS."
         },
         {
-          title: "رهبری و منتورینگ",
-          description: "هدایت تیم‌ها در تصمیمات معماری، انضباط تحویل و ارتقای کیفیت مهندسی."
+          title: "رهبری در چند حوزه",
+          description: "رهبری تیم‌ها و معماری در نرم‌افزارهای سازمانی، محصولات مخابراتی، سامانه‌های SaaS مدرن و پروژه‌های محصول‌محور مبتنی بر هوش مصنوعی."
         }
       ]
     },
@@ -482,11 +498,11 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
       eyebrow: "تجربه",
       title: "مسیر حرفه‌ای من حول ساخت سامانه‌های سازمانی و مسئولیت‌های سنگین شکل گرفته است",
       description:
-        "از سامانه‌های دسکتاپ و GIS تا داشبوردهای ملی، محصولات مخابراتی، جریان‌های پرداخت SaaS و اپلیکیشن‌های فول‌استک مدرن.",
+        "از سامانه‌های دسکتاپ و GIS تا پلتفرم‌های سازمانی، سامانه‌های KPI ملی، محصولات مخابراتی، جریان‌های پرداخت SaaS و اپلیکیشن‌های مدرن مبتنی بر هوش مصنوعی.",
       items: [
         {
           company: "ره‌آورد انفورماتیک توس",
-          role: "مهندس نرم‌افزار · لید تیم",
+          role: "مهندس نرم‌افزار / رهبر فنی",
           summary:
             "توسعه نرم‌افزارهای عملیاتی در وب و دسکتاپ همراه با ورود روش‌مندی بیشتر به فرایندهای مهندسی.",
           achievements: [
@@ -497,29 +513,18 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         },
         {
           company: "درج آی‌تی",
-          role: "مهندس ارشد فول‌استک · سازنده پلتفرم",
+          role: "موسس و معمار ارشد نرم‌افزارهای سازمانی",
           summary:
-            "طراحی و تحویل سامانه‌های حیاتی در حوزه BI، CRM، گردش‌کار و عملیات صنعتی.",
+            "درج آی‌تی را با تمرکز بر نرم‌افزارهای سازمانی، پلتفرم‌های BI، سامانه‌های عملیاتی صنعتی، مدیریت Workflow، راهکارهای CRM و پلتفرم‌های تجمیع KPI در مقیاس ملی تاسیس و رهبری کردم.",
           achievements: [
-            "پیاده‌سازی پلتفرم‌های BI، داشبوردها، CRM و موتورهای Workflow",
-            "توسعه پلتفرم مدیریت تولید برای محیط‌های صنعتی",
-            "تمرکز بر نرم‌افزار عملیاتی، گزارش‌گیری، فرم‌ها، همکاری و توسعه‌پذیری سامانه"
-          ]
-        },
-        {
-          company: "پلتفرم‌های ملی KPI",
-          role: "معمار · مهندس ارشد",
-          summary:
-            "رهبری معماری و پیاده‌سازی سامانه‌های تجمیع و امتیازدهی KPI در مقیاس ملی.",
-          achievements: [
-            "توسعه سامانه‌های سکان و سیما برای گزارش‌گیری ملی",
-            "طراحی جریان‌های یکپارچه‌سازی API، مکانیزم‌های Retry و منطق امتیازدهی",
-            "ساخت داشبوردهای پایش و تحلیل در مقیاس کلان"
+            "رهبری معماری، توسعه، استراتژی محصول و جهت‌گیری فنی پروژه‌های سازمانی در صنایع برق، پالایشگاه و محیط‌های صنعتی",
+            "توسعه پلتفرم‌های BI، داشبوردهای سازمانی، راهکارهای CRM، پلتفرم‌های Workflow، سامانه‌های صنعتی و پلتفرم مدیریت تولید (PMS)",
+            "تحویل پروژه‌های سیما، سکان، Dashboard Builder و سامانه‌های ملی تجمیع KPI در قالب پروژه‌های درج آی‌تی"
           ]
         },
         {
           company: "MTN Irancell",
-          role: "سرپرست تیم فرانت‌اند · مشارکت‌کننده معماری",
+          role: "سرپرست تیم فرانت‌اند / معمار نرم‌افزار",
           summary:
             "همکاری در یکی از بزرگ‌ترین اکوسیستم‌های مخابراتی منطقه با مسئولیت در معماری و تحویل فرانت‌اند.",
           achievements: [
@@ -537,6 +542,17 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "تحویل قابلیت‌های مرتبط با Checkout و پرداخت",
             "کار در لایه‌های Angular، NestJS و جریان‌های محصول API-Driven",
             "مشارکت در الگوهای مقیاس‌پذیر SaaS در یک تیم ریموت"
+          ]
+        },
+        {
+          company: "Hoofer",
+          role: "مهندس محصول مبتنی بر هوش مصنوعی",
+          summary:
+            "فعالیت روی یک محصول مدرن AI-assisted با معماری مقیاس‌پذیر فرانت‌اند/بک‌اند و ذهنیت مهندسی محصول‌محور.",
+          achievements: [
+            "ساخت جریان‌های محصول مبتنی بر هوش مصنوعی با ذهنیت مدرن SaaS",
+            "کار روی معماری مقیاس‌پذیر فرانت‌اند و بک‌اند برای تکرار سریع محصول",
+            "به‌کارگیری مهندسی محصول‌محور برای قابلیت استفاده، توسعه‌پذیری و پذیرش واقعی"
           ]
         }
       ]
@@ -614,6 +630,22 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "مشارکت در محصولی مخابراتی با مقیاس مصرف‌کننده",
             "پشتیبانی از معماری و رهبری تیم فرانت‌اند",
             "ساخت تجربه‌های متصل در یک بستر سازمانی پیچیده"
+          ]
+        },
+        {
+          title: "Hoofer",
+          description:
+            "یک محصول مدرن AI-assisted با ذهنیت product-first که معماری مقیاس‌پذیر فرانت‌اند/بک‌اند را با تکرار سریع و تحویل SaaS-style ترکیب می‌کند.",
+          architecture: [
+            "معماری محصول با رویکرد Angular/NestJS برای تکامل تمیز و توسعه‌پذیر",
+            "یکپارچه‌سازی جریان‌های مبتنی بر هوش مصنوعی در سطح یک محصول فول‌استک مدرن",
+            "مرزبندی مقیاس‌پذیر بین فرانت‌اند و بک‌اند برای تکرار سریع، نگهداشت‌پذیری و رشد"
+          ],
+          technologies: ["Angular", "NestJS", "TypeScript", "AI-Assisted Workflows", "SaaS Architecture"],
+          achievements: [
+            "تعریف‌شده به‌عنوان یک تلاش مدرن در مهندسی محصول، نه یک داشبورد سازمانی سنتی",
+            "ایجاد تعادل بین کیفیت معماری، سرعت تکرار و قابلیت استفاده محصول",
+            "گسترش تجربه حرفه‌ای به سمت ساخت محصولات مبتنی بر هوش مصنوعی"
           ]
         }
       ]
@@ -711,7 +743,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           problem:
             "برنامه‌های ملی KPI به تجمیع پایدار داده از چندین سامانه نیاز داشتند، اما یکپارچه‌سازی‌های بالادستی ناپایدار، تاخیردار و از نظر عملیاتی دشوار برای پایش بودند.",
           role:
-            "من معماری و پیاده‌سازی لایه‌های تجمیع، امتیازدهی و داشبورد را رهبری کردم و الگوهای مقاوم برای یکپارچه‌سازی‌های ناپایدار را طراحی کردم.",
+            "در دوره رهبری درج آی‌تی، معماری و پیاده‌سازی لایه‌های تجمیع، امتیازدهی و داشبورد را هدایت کردم و الگوهای مقاوم برای یکپارچه‌سازی‌های ناپایدار را طراحی کردم.",
           architecture: [
             "سرویس‌های تجمیع API با الگوهای Retry و همگام‌سازی زمان‌بندی‌شده",
             "خط نرمال‌سازی و امتیازدهی برای ارزیابی KPI",
