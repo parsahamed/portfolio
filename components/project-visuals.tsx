@@ -42,7 +42,6 @@ type VisualCardProps = {
 export function VisualCard({projectName, visual, sizes, className, priority = false}: VisualCardProps) {
   const Icon = iconMap[visual.kind] ?? PanelsTopLeft;
   const hasImage = publicAssetExists(visual.src);
-  console.log(`Checking visual for project "${projectName}":`, visual, "Image exists:", hasImage);
 
   return (
     <div
@@ -99,7 +98,6 @@ type VisualEvidenceGridProps = {
 };
 
 export function VisualEvidenceGrid({projectName, visuals}: VisualEvidenceGridProps) {
-  console.log("Visuals for project:", projectName, visuals);
 
   if (!visuals || visuals.length === 0) {
     return null;
