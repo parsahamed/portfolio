@@ -133,7 +133,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         {
           title: "Industrial Production Management Platform",
           description:
-            "An industrial operations platform built for 400+ users in a 24/7 environment, combining workflow execution, real-time coordination, dashboards, reporting, and configurable operational tooling.",
+            "An industrial operations platform for a 24/7 gas refinery environment, combining workflow execution, real-time coordination, dashboards, reporting, and configurable operational tooling for 400+ users.",
           architecture: [
             "ReactJS client connected to Node.js web services and Socket.IO hubs for live operational updates",
             "Microservices and message broker patterns supporting workflow orchestration, event propagation, and extensibility",
@@ -141,9 +141,9 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           ],
           technologies: ["ReactJS", "Node.js", "Socket.IO", "Message Broker", "Microservices", "PostgreSQL", "Reporting"],
           achievements: [
-            "Supported 24/7 operations with multi-role workflows across production teams",
-            "Unified data capture, reporting, dashboarding, and collaboration in one operational platform",
-            "Reduced fragmentation between execution systems, monitoring tools, and communication channels"
+            "Reduced monthly reporting from at least 3 days of manual Excel consolidation to instant management-level reporting",
+            "Improved daily operational monitoring and material-consumption control through centralized, validated production data",
+            "Supported 400+ users with reporting, dashboard design, dynamic forms, and collaboration in a 24/7 refinery operation"
           ]
         },
         {
@@ -211,7 +211,8 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         keyFeatures: "Key Features",
         technologies: "Technologies",
         businessImpact: "Business Impact",
-        scale: "Scale"
+        scale: "Scale",
+        measuredOutcomes: "Measured Business Outcomes"
       },
       items: [
         {
@@ -235,14 +236,22 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           ],
           technologies: ["ReactJS", "Node.js", "Socket.IO", "Message Broker", "Microservices", "PostgreSQL", "Reporting"],
           businessImpact: [
-            "Centralized core operational workflows into a single platform",
-            "Improved production visibility and accountability across roles",
-            "Reduced dependence on disconnected spreadsheets, messaging, and manual follow-up"
+            "Reduced monthly report preparation from at least 3 days of manual Excel consolidation to instant management-level reporting.",
+            "Improved daily operational monitoring and helped reduce material waste through centralized, validated production data.",
+            "Reduced amine process loss from 30 kg to 25 kg per 1M m³ of processed gas, resulting in an estimated €72,000 saving.",
+            "Reduced annual anti-foam consumption from 30 tons to 25 tons, resulting in an estimated €10,000 saving.",
+            "Supported 400+ users in a 24/7 refinery operation environment."
           ],
           scale: [
             "400+ active users",
             "24/7 industrial operation",
             "Multi-role usage across production and management"
+          ],
+          measuredOutcomes: [
+            "3 days/month → instant reporting",
+            "30kg → 25kg amine loss per 1M m³",
+            "€72K estimated amine saving",
+            "30t → 25t annual anti-foam consumption"
           ]
         },
         {
@@ -546,7 +555,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         {
           title: "پلتفرم مدیریت تولید صنعتی",
           description:
-            "یک پلتفرم عملیاتی صنعتی برای بیش از ۴۰۰ کاربر در محیط 24/7 که Workflow، گزارش‌گیری، داشبورد، ابزارهای پویا و همکاری لحظه‌ای را در یک بستر واحد متمرکز می‌کند.",
+            "یک پلتفرم عملیاتی صنعتی برای محیط 24/7 پالایشگاه گاز که Workflow، گزارش‌گیری، داشبورد، ابزارهای پویا و همکاری لحظه‌ای را برای بیش از ۴۰۰ کاربر در یک بستر واحد متمرکز می‌کند.",
           architecture: [
             "کلاینت ReactJS همراه با سرویس‌های Node.js و هاب‌های Socket.IO برای به‌روزرسانی زنده وضعیت عملیات",
             "الگوی Microservices و Message Broker برای اجرای Workflow، رویدادها و توسعه‌پذیری زیرسامانه‌ها",
@@ -554,9 +563,9 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           ],
           technologies: ["ReactJS", "Node.js", "Socket.IO", "Message Broker", "Microservices", "PostgreSQL", "Reporting"],
           achievements: [
-            "پشتیبانی از عملیات 24/7 با Workflowهای چندنقشی در مقیاس صنعتی",
-            "یکپارچه‌سازی ثبت داده، گزارش‌گیری، داشبوردسازی و همکاری تیمی در یک پلتفرم",
-            "کاهش پراکندگی بین ابزارهای اجرا، مانیتورینگ و ارتباطات عملیاتی"
+            "کاهش زمان گزارش‌گیری ماهانه از حداقل ۳ روز تجمیع دستی فایل‌های Excel به گزارش‌گیری لحظه‌ای مدیریتی",
+            "بهبود پایش روزانه عملیات و کنترل مصرف مواد از طریق داده‌های متمرکز و اعتبارسنجی‌شده",
+            "پشتیبانی از بیش از ۴۰۰ کاربر با گزارش‌گیری، طراحی داشبورد، فرم‌های پویا و همکاری تیمی در عملیات 24/7 پالایشگاه"
           ]
         },
         {
@@ -624,7 +633,8 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         keyFeatures: "قابلیت‌های کلیدی",
         technologies: "فناوری‌ها",
         businessImpact: "اثر کسب‌وکاری",
-        scale: "مقیاس"
+        scale: "مقیاس",
+        measuredOutcomes: "نتایج قابل‌اندازه‌گیری کسب‌وکار"
       },
       items: [
         {
@@ -648,14 +658,22 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           ],
           technologies: ["ReactJS", "Node.js", "Socket.IO", "Message Broker", "Microservices", "PostgreSQL", "Reporting"],
           businessImpact: [
-            "متمرکزسازی Workflowهای اصلی عملیات در یک پلتفرم واحد",
-            "افزایش شفافیت و پاسخ‌گویی در اجرای تولید",
-            "کاهش وابستگی به فایل‌های پراکنده، پیام‌رسان‌ها و پیگیری دستی"
+            "کاهش زمان تهیه گزارش‌های ماهانه از حداقل ۳ روز کار دستی با فایل‌های Excel به گزارش‌گیری لحظه‌ای در سطوح مختلف مدیریتی.",
+            "بهبود کنترل و پایش روزانه داده‌های عملیاتی و کاهش هدررفت مواد از طریق ثبت متمرکز و اعتبارسنجی‌شده اطلاعات تولید.",
+            "کاهش اتلاف آمین از ۳۰ کیلوگرم به ۲۵ کیلوگرم به ازای هر یک میلیون متر مکعب گاز پالایش‌شده و ایجاد حدود ۷۲ هزار یورو صرفه‌جویی.",
+            "کاهش مصرف سالانه آنتی‌فوم از ۳۰ تن به ۲۵ تن و ایجاد حدود ۱۰ هزار یورو صرفه‌جویی.",
+            "پشتیبانی از بیش از ۴۰۰ کاربر در محیط عملیاتی ۲۴/۷ پالایشگاه."
           ],
           scale: [
             "بیش از ۴۰۰ کاربر فعال",
             "عملیات صنعتی 24/7",
             "استفاده چندنقشی در سطوح تولید و مدیریت"
+          ],
+          measuredOutcomes: [
+            "از ۳ روز در ماه به گزارش‌گیری لحظه‌ای",
+            "کاهش اتلاف آمین از ۳۰ به ۲۵ کیلوگرم",
+            "حدود ۷۲ هزار یورو صرفه‌جویی آمین",
+            "کاهش مصرف آنتی‌فوم از ۳۰ به ۲۵ تن در سال"
           ]
         },
         {

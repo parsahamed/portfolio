@@ -39,6 +39,7 @@ export type EnterpriseProject = {
   technologies: string[];
   businessImpact: string[];
   scale: string[];
+  measuredOutcomes?: string[];
 };
 
 export type SkillCategory = {
@@ -107,6 +108,7 @@ export type PortfolioContent = {
       technologies: string;
       businessImpact: string;
       scale: string;
+      measuredOutcomes: string;
     };
     items: EnterpriseProject[];
   };
