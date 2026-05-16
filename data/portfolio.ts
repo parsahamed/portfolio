@@ -107,14 +107,15 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           ]
         },
         {
-          company: "Hoofer",
-          role: "AI Product Engineer",
+          company: "Parnian - Hoofer SaaS Platform",
+          role: "Frontend Architect (Part-time)",
           summary:
-            "Working on a modern AI-assisted product with scalable frontend/backend architecture and a product-oriented engineering mindset.",
+            "Leading frontend modernization for a production SaaS platform, upgrading the legacy Angular frontend and improving maintainability, mobile readiness, and delivery speed.",
           achievements: [
-            "Built AI-assisted product flows with a modern SaaS mindset",
-            "Worked across scalable frontend and backend architecture for fast product iteration",
-            "Applied product-focused engineering to usability, extensibility, and real-world adoption"
+            "Leading frontend modernization from Angular 11 to Angular 21 for a production SaaS platform",
+            "Refactored legacy frontend architecture into a modular structure, improving maintainability and accelerating feature delivery",
+            "Converted the platform into a Progressive Web App (PWA) and delivered an Android application using Trusted Web Activity (TWA)",
+            "Improved mobile responsiveness and frontend consistency across devices"
           ]
         }
       ]
@@ -195,19 +196,19 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           ]
         },
         {
-          title: "Hoofer",
+          title: "Hoofer SaaS Platform",
           description:
-            "A modern AI-assisted product built with a product-first mindset, combining scalable frontend/backend architecture with fast iteration and SaaS-style delivery.",
+            "A production SaaS platform where I lead frontend modernization, upgrading the legacy Angular frontend, improving modularity, and preparing the product for better mobile and app-like usage.",
           architecture: [
-            "Angular/NestJS-oriented application architecture for clean product evolution",
-            "AI-assisted workflows integrated into a modern full-stack product surface",
-            "Scalable frontend/backend boundaries designed for iteration, maintainability, and growth"
+            "Angular modernization from Angular 11 to Angular 21 with a cleaner modular frontend structure",
+            "Progressive Web App (PWA) foundation for app-like behavior across devices",
+            "Android delivery using Trusted Web Activity (TWA) while preserving a shared web platform"
           ],
-          technologies: ["Angular", "NestJS", "TypeScript", "AI-Assisted Workflows", "SaaS Architecture"],
+          technologies: ["Angular", "TypeScript", "PWA", "Trusted Web Activity", "SaaS Architecture", "Responsive UI"],
           achievements: [
-            "Positioned as a modern product engineering effort rather than a traditional enterprise dashboard",
-            "Balanced architecture quality with fast iteration and product usability",
-            "Extended experience into AI-oriented product building"
+            "Modernized legacy frontend architecture to improve maintainability and accelerate feature delivery",
+            "Delivered PWA and Android app capabilities from the same product surface",
+            "Improved mobile responsiveness and frontend consistency across devices"
           ]
         }
       ]
@@ -545,14 +546,15 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           ]
         },
         {
-          company: "Hoofer",
-          role: "مهندس محصول مبتنی بر هوش مصنوعی",
+          company: "پلتفرم SaaS هوفر - پرنیان",
+          role: "معمار فرانت‌اند (پاره‌وقت)",
           summary:
-            "فعالیت روی یک محصول مدرن AI-assisted با معماری مقیاس‌پذیر فرانت‌اند/بک‌اند و ذهنیت مهندسی محصول‌محور.",
+            "رهبری نوسازی فرانت‌اند برای یک پلتفرم SaaS عملیاتی، ارتقای فرانت‌اند Legacy مبتنی بر Angular و بهبود نگهداشت‌پذیری، آمادگی موبایل و سرعت تحویل قابلیت‌ها.",
           achievements: [
-            "ساخت جریان‌های محصول مبتنی بر هوش مصنوعی با ذهنیت مدرن SaaS",
-            "کار روی معماری مقیاس‌پذیر فرانت‌اند و بک‌اند برای تکرار سریع محصول",
-            "به‌کارگیری مهندسی محصول‌محور برای قابلیت استفاده، توسعه‌پذیری و پذیرش واقعی"
+            "رهبری نوسازی فرانت‌اند از Angular 11 به Angular 21 برای یک پلتفرم SaaS عملیاتی",
+            "بازطراحی معماری فرانت‌اند Legacy به ساختار ماژولار با هدف افزایش نگهداشت‌پذیری و سرعت تحویل قابلیت‌ها",
+            "تبدیل پلتفرم به Progressive Web App (PWA) و ارائه اپلیکیشن اندروید با استفاده از Trusted Web Activity (TWA)",
+            "بهبود ریسپانسیو بودن موبایل و یکپارچگی تجربه فرانت‌اند در دستگاه‌های مختلف"
           ]
         }
       ]
@@ -633,19 +635,19 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           ]
         },
         {
-          title: "Hoofer",
+          title: "پلتفرم SaaS هوفر",
           description:
-            "یک محصول مدرن AI-assisted با ذهنیت product-first که معماری مقیاس‌پذیر فرانت‌اند/بک‌اند را با تکرار سریع و تحویل SaaS-style ترکیب می‌کند.",
+            "یک پلتفرم SaaS عملیاتی که در آن رهبری نوسازی فرانت‌اند، ارتقای Angular Legacy، بهبود ساختار ماژولار و آماده‌سازی محصول برای تجربه بهتر موبایل و اپلیکیشن را بر عهده دارم.",
           architecture: [
-            "معماری محصول با رویکرد Angular/NestJS برای تکامل تمیز و توسعه‌پذیر",
-            "یکپارچه‌سازی جریان‌های مبتنی بر هوش مصنوعی در سطح یک محصول فول‌استک مدرن",
-            "مرزبندی مقیاس‌پذیر بین فرانت‌اند و بک‌اند برای تکرار سریع، نگهداشت‌پذیری و رشد"
+            "نوسازی Angular از نسخه 11 به 21 همراه با ساختار ماژولارتر و تمیزتر فرانت‌اند",
+            "ایجاد پایه Progressive Web App (PWA) برای تجربه app-like در دستگاه‌های مختلف",
+            "ارائه نسخه اندروید با Trusted Web Activity (TWA) با حفظ یک سطح مشترک وب"
           ],
-          technologies: ["Angular", "NestJS", "TypeScript", "AI-Assisted Workflows", "SaaS Architecture"],
+          technologies: ["Angular", "TypeScript", "PWA", "Trusted Web Activity", "SaaS Architecture", "Responsive UI"],
           achievements: [
-            "تعریف‌شده به‌عنوان یک تلاش مدرن در مهندسی محصول، نه یک داشبورد سازمانی سنتی",
-            "ایجاد تعادل بین کیفیت معماری، سرعت تکرار و قابلیت استفاده محصول",
-            "گسترش تجربه حرفه‌ای به سمت ساخت محصولات مبتنی بر هوش مصنوعی"
+            "نوسازی معماری فرانت‌اند Legacy برای افزایش نگهداشت‌پذیری و سرعت تحویل قابلیت‌ها",
+            "ارائه قابلیت‌های PWA و اپلیکیشن اندروید از یک سطح محصول مشترک",
+            "بهبود ریسپانسیو بودن موبایل و یکپارچگی تجربه فرانت‌اند در دستگاه‌های مختلف"
           ]
         }
       ]
