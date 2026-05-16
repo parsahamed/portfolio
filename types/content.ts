@@ -1,0 +1,101 @@
+import type {Locale} from "@/lib/i18n";
+
+export type NavItem = {
+  href: string;
+  label: string;
+};
+
+export type Stat = {
+  value: string;
+  label: string;
+};
+
+export type AboutPillar = {
+  title: string;
+  description: string;
+};
+
+export type ExperienceItem = {
+  company: string;
+  role: string;
+  summary: string;
+  achievements: string[];
+};
+
+export type ProjectItem = {
+  title: string;
+  description: string;
+  architecture: string[];
+  technologies: string[];
+  achievements: string[];
+};
+
+export type SkillCategory = {
+  title: string;
+  skills: string[];
+};
+
+export type ContactLink = {
+  label: string;
+  href: string;
+  value: string;
+};
+
+export type PortfolioContent = {
+  locale: Locale;
+  brand: string;
+  metaTitle: string;
+  metaDescription: string;
+  nav: NavItem[];
+  hero: {
+    eyebrow: string;
+    headline: string;
+    subheadline: string;
+    ctaPrimary: string;
+    ctaSecondary: string;
+    stats: Stat[];
+  };
+  about: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    pillars: AboutPillar[];
+  };
+  experience: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    items: ExperienceItem[];
+  };
+  projects: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    items: ProjectItem[];
+  };
+  skills: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    categories: SkillCategory[];
+  };
+  philosophy: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    statements: string[];
+  };
+  contact: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    cta: string;
+    links: ContactLink[];
+  };
+  footer: {
+    statement: string;
+    copyright: string;
+  };
+  languageLabel: string;
+};
+
