@@ -32,6 +32,7 @@ export default async function LocalizedHomePage({
         locale={content.locale}
         languageLabel={content.languageLabel}
         contactLabel={content.contact.eyebrow}
+        resumeLabel={content.hero.ctaResume}
       />
       <HeroSection content={content.hero} />
       <AboutSection content={content.about} />

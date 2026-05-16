@@ -8,7 +8,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
     brand: "Hamed Parsa",
     metaTitle: "Hamed Parsa | Senior Full-Stack Engineer & Enterprise Architect",
     metaDescription:
-      "Senior full-stack engineer and enterprise software architect with 20+ years of experience building industrial platforms, BI systems, telecom products, SaaS systems, and AI-driven applications.",
+      "Senior full-stack engineer and enterprise software architect with 20+ years of experience building industrial platforms, BI systems, telecom products, SaaS systems, and AI-assisted applications.",
     nav: [
       {href: "#about", label: "About"},
       {href: "#experience", label: "Experience"},
@@ -36,7 +36,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
       eyebrow: "About",
       title: "Founder, architect, and product-minded engineer focused on durable software",
       description:
-        "I design platforms that survive real-world complexity. My work sits at the intersection of entrepreneurship, enterprise architecture, product thinking, and delivery: operational software, BI systems, telecom products, SaaS applications, and emerging AI-assisted platforms built for long-term use.",
+        "I design platforms that survive real-world complexity. My work sits at the intersection of entrepreneurship, enterprise architecture, product thinking, and delivery: operational software, BI systems, telecom products, SaaS applications, and modern platform work with AI-assisted directions built for long-term use.",
       pillars: [
         {
           title: "Founder & Architecture Owner",
@@ -52,7 +52,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         },
         {
           title: "Leadership Across Domains",
-          description: "Leading teams and architecture across enterprise software, telecom products, modern SaaS systems, and AI-oriented product work."
+          description: "Leading teams and architecture across enterprise software, telecom products, modern SaaS systems, and platform modernization work."
         }
       ]
     },
@@ -60,7 +60,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
       eyebrow: "Experience",
       title: "A career built around enterprise platforms and high-responsibility systems",
       description:
-        "From early desktop and GIS systems to enterprise platforms, national KPI systems, telecom products, SaaS checkout flows, and modern AI-oriented applications.",
+        "From early desktop and GIS systems to enterprise platforms, national KPI systems, telecom products, SaaS checkout flows, and modern platform modernization initiatives.",
       items: [
         {
           company: "Rahavard Informatics Toos",
@@ -107,8 +107,8 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           ]
         },
         {
-          company: "Parnian - Hoofer SaaS Platform",
-          role: "Frontend Architect (Part-time)",
+          company: "Hoofer",
+          role: "Frontend Architect (Part-time) | Parnian - Hoofer SaaS Platform",
           summary:
             "Leading frontend modernization for a production SaaS platform, upgrading the legacy Angular frontend and improving maintainability, mobile readiness, and delivery speed.",
           achievements: [
@@ -145,6 +145,9 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Reduced monthly reporting from at least 3 days of manual Excel consolidation to instant management-level reporting",
             "Improved daily operational monitoring and material-consumption control through centralized, validated production data",
             "Supported 400+ users with reporting, dashboard design, dynamic forms, and collaboration in a 24/7 refinery operation"
+          ],
+          visuals: [
+            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-6.png"},
           ]
         },
         {
@@ -161,7 +164,8 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Improved cross-team visibility and action tracking",
             "Unified documents, process steps, and communication",
             "Created a more usable workflow layer for non-technical users"
-          ]
+          ],
+          visuals: []
         },
         {
           title: "National KPI Aggregation Platform",
@@ -177,6 +181,9 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Enabled nationwide KPI collection and evaluation",
             "Handled unstable integrations through resilient data flows",
             "Delivered a clear reporting layer for management and oversight"
+          ],
+          visuals: [
+            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/sima-sekan/screen-dashboard-sima.png"},
           ]
         },
         {
@@ -193,6 +200,9 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Contributed to a large-scale telecom product with significant reach",
             "Supported architecture and frontend team leadership",
             "Helped build connected product experiences in a complex enterprise setting"
+          ],
+          visuals: [
+            {kind: "dashboard", label: "Product Screenshot", src: "/projects/my-irancell/screen.png"}
           ]
         },
         {
@@ -209,6 +219,9 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Modernized legacy frontend architecture to improve maintainability and accelerate feature delivery",
             "Delivered PWA and Android app capabilities from the same product surface",
             "Improved mobile responsiveness and frontend consistency across devices"
+          ],
+          visuals: [
+            {kind: "pwa", label: "PWA", src: "/projects/hoofer/responsive-grid.png"},
           ]
         }
       ]
@@ -229,7 +242,9 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         technologies: "Technologies",
         businessImpact: "Business Impact",
         scale: "Scale",
-        measuredOutcomes: "Measured Business Outcomes"
+        measuredOutcomes: "Measured Business Outcomes",
+        visualEvidence: "Visual Evidence",
+        visualHighlights: "Visual Structure"
       },
       items: [
         {
@@ -269,6 +284,22 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "30kg → 25kg amine loss per 1M m³",
             "€72K estimated amine saving",
             "30t → 25t annual anti-foam consumption"
+          ],
+          visualHighlights: [
+            "Dynamic Forms",
+            "Real-time Dashboards",
+            "Chat / Collaboration",
+            "Reporting & Business Impact"
+          ],
+          visuals: [
+            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-1.png"},
+            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-2.png"},
+            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-3.png"},
+            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-4.png"},
+            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-5.png"},
+            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-6.png"},
+            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/pms/screen-pms-7.png"},
+            {kind: "architecture", label: "Architecture Diagram", src: "/projects/pms/architecture.png"},
           ]
         },
         {
@@ -299,7 +330,8 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Cross-team workflow platform",
             "Used for process-heavy operational collaboration",
             "Designed for extensible business process growth"
-          ]
+          ],
+          visuals: []
         },
         {
           title: "National KPI Aggregation Platform / SIMA / SEKAN",
@@ -329,6 +361,10 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "National reporting scope",
             "Multiple integrated data providers",
             "High-visibility management and governance use"
+          ],
+          visuals: [
+            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/sima-sekan/screen-dashboard-sima.png"},
+            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/sima-sekan/screen-dashboard-sima-2.png"},
           ]
         },
         {
@@ -359,6 +395,10 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Enterprise business workflow support",
             "Multiple business stakeholders and process owners",
             "Long-term extensibility around operational needs"
+          ],
+          visuals: [
+            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/crm/Picture1.png"},
+            {kind: "dashboard", label: "Dashboard Screenshot", src: "/projects/crm/Picture2.png"},
           ]
         },
         {
@@ -389,6 +429,41 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Utility and refinery business domains",
             "Management and operations stakeholders",
             "Ongoing reporting and dashboard consumption"
+          ],
+          visuals: []
+        },
+        {
+          title: "Hoofer SaaS Platform",
+          problem:
+            "The product needed modernization of a legacy Angular frontend, stronger maintainability, better mobile behavior, and a cleaner path toward app-like delivery without splitting the platform into separate codebases.",
+          role:
+            "As Frontend Architect (Part-time) at Parnian for the Hoofer SaaS Platform, I led frontend modernization, modularization, and the move toward PWA and Android delivery.",
+          architecture: [
+            "Angular modernization from Angular 11 to Angular 21 with modular frontend boundaries",
+            "Progressive Web App (PWA) capability to improve app-like usage and deployment flexibility",
+            "Android delivery via Trusted Web Activity (TWA) while preserving a single web product surface"
+          ],
+          keyFeatures: [
+            "Legacy frontend modernization",
+            "Modular architecture for maintainability and faster delivery",
+            "Progressive Web App support",
+            "Android TWA packaging",
+            "Responsive UI improvements across devices"
+          ],
+          technologies: ["Angular", "TypeScript", "PWA", "Trusted Web Activity", "Responsive UI", "SaaS Architecture"],
+          businessImpact: [
+            "Improved maintainability of the frontend codebase and accelerated feature delivery",
+            "Created a practical path toward app-like distribution without duplicating product surfaces",
+            "Improved responsiveness and consistency across desktop and mobile usage"
+          ],
+          scale: [
+            "Production SaaS platform",
+            "Shared web and Android delivery path",
+            "Ongoing modernization within a live product environment"
+          ],
+          visuals: [
+            {kind: "pwa", label: "PWA", src: "/projects/hoofer/responsive-grid.png"},
+            {kind: "pwa", label: "PWA", src: "/projects/hoofer/responsive-data-input.png"},
           ]
         }
       ]
@@ -447,7 +522,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
     brand: "حامد پارسا",
     metaTitle: "حامد پارسا | مهندس ارشد فول‌استک و معمار نرم‌افزار سازمانی",
     metaDescription:
-      "مهندس ارشد فول‌استک و معمار نرم‌افزار سازمانی با بیش از ۲۰ سال تجربه در ساخت پلتفرم‌های صنعتی، سامانه‌های هوش تجاری، محصولات مخابراتی، SaaS و راهکارهای مبتنی بر هوش مصنوعی.",
+      "مهندس ارشد فول‌استک و معمار نرم‌افزار سازمانی با بیش از ۲۰ سال تجربه در ساخت پلتفرم‌های صنعتی، سامانه‌های هوش تجاری، محصولات مخابراتی، SaaS و راهکارهای مدرن نرم‌افزاری.",
     nav: [
       {href: "#about", label: "درباره من"},
       {href: "#experience", label: "تجربه"},
@@ -461,7 +536,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
       eyebrow: "سامانه‌های سازمانی · مهندسی محصول · رهبری فنی",
       headline: "مهندس ارشد فول‌استک و معمار نرم‌افزار سازمانی",
       subheadline:
-        "بیش از ۲۰ سال تجربه در ساخت پلتفرم‌های سازمانی، سامانه‌های صنعتی، محصولات مبتنی بر هوش مصنوعی، راهکارهای BI، محصولات مخابراتی و اپلیکیشن‌های وب مقیاس‌پذیر.",
+        "بیش از ۲۰ سال تجربه در ساخت پلتفرم‌های سازمانی، سامانه‌های صنعتی، راهکارهای BI، محصولات مخابراتی و اپلیکیشن‌های وب مقیاس‌پذیر.",
       ctaPrimary: "مشاهده پروژه‌ها",
       ctaSecondary: "ارتباط با من",
       ctaResume: "دانلود رزومه",
@@ -475,7 +550,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
       eyebrow: "درباره من",
       title: "موسس، معمار و مهندس محصول‌محور برای ساخت نرم‌افزارهای ماندگار",
       description:
-        "من پلتفرم‌هایی طراحی می‌کنم که بتوانند پیچیدگی واقعی کسب‌وکار را تحمل کنند. تمرکز کاری من در مرز بین کارآفرینی، معماری سازمانی، نگاه محصول‌محور و اجراست: نرم‌افزارهای عملیاتی، سامانه‌های BI، محصولات مخابراتی، اپلیکیشن‌های SaaS و پلتفرم‌های نوین مبتنی بر هوش مصنوعی که برای استفاده بلندمدت ساخته می‌شوند.",
+        "من پلتفرم‌هایی طراحی می‌کنم که بتوانند پیچیدگی واقعی کسب‌وکار را تحمل کنند. تمرکز کاری من در مرز بین کارآفرینی، معماری سازمانی، نگاه محصول‌محور و اجراست: نرم‌افزارهای عملیاتی، سامانه‌های BI، محصولات مخابراتی، اپلیکیشن‌های SaaS و مسیرهای مدرن توسعه محصول که برای استفاده بلندمدت ساخته می‌شوند.",
       pillars: [
         {
           title: "کارآفرینی و مالکیت معماری",
@@ -491,7 +566,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         },
         {
           title: "رهبری در چند حوزه",
-          description: "رهبری تیم‌ها و معماری در نرم‌افزارهای سازمانی، محصولات مخابراتی، سامانه‌های SaaS مدرن و پروژه‌های محصول‌محور مبتنی بر هوش مصنوعی."
+          description: "رهبری تیم‌ها و معماری در نرم‌افزارهای سازمانی، محصولات مخابراتی، سامانه‌های SaaS مدرن و پروژه‌های نوسازی پلتفرم."
         }
       ]
     },
@@ -499,7 +574,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
       eyebrow: "تجربه",
       title: "مسیر حرفه‌ای من حول ساخت سامانه‌های سازمانی و مسئولیت‌های سنگین شکل گرفته است",
       description:
-        "از سامانه‌های دسکتاپ و GIS تا پلتفرم‌های سازمانی، سامانه‌های KPI ملی، محصولات مخابراتی، جریان‌های پرداخت SaaS و اپلیکیشن‌های مدرن مبتنی بر هوش مصنوعی.",
+        "از سامانه‌های دسکتاپ و GIS تا پلتفرم‌های سازمانی، سامانه‌های KPI ملی، محصولات مخابراتی، جریان‌های پرداخت SaaS و پروژه‌های نوسازی پلتفرم.",
       items: [
         {
           company: "ره‌آورد انفورماتیک توس",
@@ -546,15 +621,15 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           ]
         },
         {
-          company: "پلتفرم SaaS هوفر - پرنیان",
-          role: "معمار فرانت‌اند (پاره‌وقت)",
+          company: "هوفر",
+          role: "معمار فرانت‌اند (پاره‌وقت) | پرنیان - پلتفرم SaaS هوفر",
           summary:
-            "رهبری نوسازی فرانت‌اند برای یک پلتفرم SaaS عملیاتی، ارتقای فرانت‌اند Legacy مبتنی بر Angular و بهبود نگهداشت‌پذیری، آمادگی موبایل و سرعت تحویل قابلیت‌ها.",
+            "رهبری نوسازی فرانت‌اند برای یک پلتفرم SaaS در حال بهره‌برداری، با تمرکز بر ارتقای فرانت‌اند قدیمی Angular، بهبود نگهداشت‌پذیری، آمادگی موبایل و سرعت تحویل.",
           achievements: [
-            "رهبری نوسازی فرانت‌اند از Angular 11 به Angular 21 برای یک پلتفرم SaaS عملیاتی",
-            "بازطراحی معماری فرانت‌اند Legacy به ساختار ماژولار با هدف افزایش نگهداشت‌پذیری و سرعت تحویل قابلیت‌ها",
-            "تبدیل پلتفرم به Progressive Web App (PWA) و ارائه اپلیکیشن اندروید با استفاده از Trusted Web Activity (TWA)",
-            "بهبود ریسپانسیو بودن موبایل و یکپارچگی تجربه فرانت‌اند در دستگاه‌های مختلف"
+            "رهبری نوسازی فرانت‌اند از Angular 11 به Angular 21 برای یک پلتفرم SaaS در حال استفاده",
+            "بازطراحی معماری قدیمی فرانت‌اند به ساختاری ماژولار برای بهبود نگهداشت‌پذیری و تسریع توسعه قابلیت‌ها",
+            "تبدیل پلتفرم به Progressive Web App (PWA) و ارائه اپلیکیشن اندروید با Trusted Web Activity (TWA)",
+            "بهبود واکنش‌گرایی موبایل و یکپارچگی تجربه فرانت‌اند در دستگاه‌های مختلف"
           ]
         }
       ]
@@ -584,6 +659,9 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "کاهش زمان گزارش‌گیری ماهانه از حداقل ۳ روز تجمیع دستی فایل‌های Excel به گزارش‌گیری لحظه‌ای مدیریتی",
             "بهبود پایش روزانه عملیات و کنترل مصرف مواد از طریق داده‌های متمرکز و اعتبارسنجی‌شده",
             "پشتیبانی از بیش از ۴۰۰ کاربر با گزارش‌گیری، طراحی داشبورد، فرم‌های پویا و همکاری تیمی در عملیات 24/7 پالایشگاه"
+          ],
+          visuals: [
+            {kind: "dashboard", label: "اسکرین‌شات داشبورد", src: "/projects/pms/screen-pms-6.png"},
           ]
         },
         {
@@ -600,7 +678,8 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "بهبود دید بین‌تیمی و پیگیری اقدامات",
             "یکپارچه‌سازی اسناد، مراحل فرایند و ارتباطات",
             "ایجاد لایه Workflow قابل‌استفاده‌تر برای کاربران غیر فنی"
-          ]
+          ],
+          visuals: []
         },
         {
           title: "پلتفرم ملی تجمیع KPI",
@@ -616,6 +695,9 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "ایجاد بستر جمع‌آوری و ارزیابی KPI در سطح کشور",
             "مدیریت یکپارچه‌سازی‌های ناپایدار با جریان‌های داده مقاوم",
             "تحویل لایه گزارش‌گیری شفاف برای مدیریت و نظارت"
+          ],
+          visuals: [
+            {kind: "dashboard", label: "اسکرین‌شات داشبورد", src: "/projects/sima-sekan/screen-dashboard-sima.png"},
           ]
         },
         {
@@ -632,22 +714,28 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "مشارکت در محصولی مخابراتی با مقیاس مصرف‌کننده",
             "پشتیبانی از معماری و رهبری تیم فرانت‌اند",
             "ساخت تجربه‌های متصل در یک بستر سازمانی پیچیده"
+          ],
+          visuals: [
+            {kind: "dashboard", label: "نمای محصول", src: "/projects/my-irancell/screen.png"}
           ]
         },
         {
           title: "پلتفرم SaaS هوفر",
           description:
-            "یک پلتفرم SaaS عملیاتی که در آن رهبری نوسازی فرانت‌اند، ارتقای Angular Legacy، بهبود ساختار ماژولار و آماده‌سازی محصول برای تجربه بهتر موبایل و اپلیکیشن را بر عهده دارم.",
+            "یک پلتفرم SaaS در حال بهره‌برداری که در آن نوسازی فرانت‌اند، بهبود ماژولار بودن و آمادگی محصول برای استفاده بهتر روی موبایل و تجربه app-like را هدایت می‌کنم.",
           architecture: [
-            "نوسازی Angular از نسخه 11 به 21 همراه با ساختار ماژولارتر و تمیزتر فرانت‌اند",
-            "ایجاد پایه Progressive Web App (PWA) برای تجربه app-like در دستگاه‌های مختلف",
-            "ارائه نسخه اندروید با Trusted Web Activity (TWA) با حفظ یک سطح مشترک وب"
+            "نوسازی Angular از نسخه 11 به 21 با ساختار ماژولار و قابل نگهداری‌تر",
+            "ایجاد بستر Progressive Web App (PWA) برای تجربه‌ای نزدیک‌تر به اپلیکیشن",
+            "تحویل نسخه اندروید با Trusted Web Activity (TWA) در کنار حفظ یک سطح محصول مشترک"
           ],
           technologies: ["Angular", "TypeScript", "PWA", "Trusted Web Activity", "SaaS Architecture", "Responsive UI"],
           achievements: [
-            "نوسازی معماری فرانت‌اند Legacy برای افزایش نگهداشت‌پذیری و سرعت تحویل قابلیت‌ها",
-            "ارائه قابلیت‌های PWA و اپلیکیشن اندروید از یک سطح محصول مشترک",
-            "بهبود ریسپانسیو بودن موبایل و یکپارچگی تجربه فرانت‌اند در دستگاه‌های مختلف"
+            "نوسازی معماری فرانت‌اند قدیمی برای بهبود نگهداشت‌پذیری و سرعت توسعه",
+            "ایجاد قابلیت‌های PWA و اپلیکیشن اندروید از یک سطح محصول مشترک",
+            "بهبود واکنش‌گرایی موبایل و یکپارچگی تجربه فرانت‌اند در دستگاه‌های مختلف"
+          ],
+          visuals: [
+            {kind: "pwa", label: "PWA", src: "/projects/hoofer/responsive-grid.png"},
           ]
         }
       ]
@@ -668,7 +756,9 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         technologies: "فناوری‌ها",
         businessImpact: "اثر کسب‌وکاری",
         scale: "مقیاس",
-        measuredOutcomes: "نتایج قابل‌اندازه‌گیری کسب‌وکار"
+        measuredOutcomes: "نتایج قابل‌اندازه‌گیری کسب‌وکار",
+        visualEvidence: "مستندات تصویری",
+        visualHighlights: "ساختار بصری"
       },
       items: [
         {
@@ -708,6 +798,22 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "کاهش اتلاف آمین از ۳۰ به ۲۵ کیلوگرم",
             "حدود ۷۲ هزار یورو صرفه‌جویی آمین",
             "کاهش مصرف آنتی‌فوم از ۳۰ به ۲۵ تن در سال"
+          ],
+          visualHighlights: [
+            "فرم‌های پویا",
+            "داشبوردهای بلادرنگ",
+            "چت / همکاری",
+            "گزارش‌گیری و اثر کسب‌وکاری"
+          ],
+          visuals: [
+            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-1.png"},
+            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-2.png"},
+            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-3.png"},
+            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-4.png"},
+            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-5.png"},
+            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-6.png"},
+            {kind: "dashboard", label: "اسکرین‌شات", src: "/projects/pms/screen-pms-7.png"},
+            {kind: "architecture", label: "نمودار معماری", src: "/projects/pms/architecture.png"},
           ]
         },
         {
@@ -738,7 +844,8 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "پلتفرم Workflow بین‌تیمی",
             "مناسب برای همکاری‌های فرایندمحور",
             "طراحی‌شده برای رشد تدریجی فرایندهای کسب‌وکار"
-          ]
+          ],
+          visuals: []
         },
         {
           title: "پلتفرم ملی تجمیع KPI / سیما / سکان",
@@ -768,6 +875,10 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "دامنه ملی",
             "چندین ارائه‌دهنده داده یکپارچه‌شده",
             "استفاده مدیریتی با حساسیت بالا"
+          ],
+          visuals: [
+            {kind: "dashboard", label: "اسکرین‌شات داشبورد", src: "/projects/sima-sekan/screen-dashboard-sima.png"},
+            {kind: "dashboard", label: "اسکرین‌شات داشبورد", src: "/projects/sima-sekan/screen-dashboard-sima-2.png"},
           ]
         },
         {
@@ -798,6 +909,10 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "پشتیبانی از Workflowهای کسب‌وکار سازمانی",
             "ذی‌نفعان و مالکان فرایند متعدد",
             "توسعه‌پذیری بلندمدت بر مبنای نیازهای عملیاتی"
+          ],
+          visuals: [
+            {kind: "dashboard", label: "اسکرین‌شات داشبورد", src: "/projects/crm/Picture1.png"},
+            {kind: "dashboard", label: "اسکرین‌شات داشبورد", src: "/projects/crm/Picture2.png"},
           ]
         },
         {
@@ -828,6 +943,41 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "دامنه‌های برق و پالایشگاه",
             "ذی‌نفعان مدیریتی و عملیاتی",
             "مصرف مستمر داشبورد و گزارش"
+          ],
+          visuals: []
+        },
+        {
+          title: "پلتفرم SaaS هوفر",
+          problem:
+            "محصول به نوسازی فرانت‌اند قدیمی Angular، نگهداشت‌پذیری بهتر، رفتار مناسب‌تر روی موبایل و مسیر روشن‌تری برای تحویل app-like بدون شکستن پلتفرم به چند کدبیس جداگانه نیاز داشت.",
+          role:
+            "به‌عنوان معمار فرانت‌اند (پاره‌وقت) در پرنیان برای پلتفرم SaaS هوفر، نوسازی فرانت‌اند، ماژولارسازی و حرکت به سمت PWA و تحویل اندروید را هدایت می‌کنم.",
+          architecture: [
+            "نوسازی Angular از نسخه 11 به 21 با مرزبندی ماژولار فرانت‌اند",
+            "قابلیت Progressive Web App (PWA) برای بهبود تجربه app-like و انعطاف در استقرار",
+            "تحویل اندروید با Trusted Web Activity (TWA) در کنار حفظ یک سطح محصول وب مشترک"
+          ],
+          keyFeatures: [
+            "نوسازی فرانت‌اند Legacy",
+            "معماری ماژولار برای نگهداشت‌پذیری و تحویل سریع‌تر",
+            "پشتیبانی از Progressive Web App",
+            "بسته‌بندی اندروید با TWA",
+            "بهبود رابط کاربری Responsive در دستگاه‌های مختلف"
+          ],
+          technologies: ["Angular", "TypeScript", "PWA", "Trusted Web Activity", "Responsive UI", "SaaS Architecture"],
+          businessImpact: [
+            "بهبود نگهداشت‌پذیری کدبیس فرانت‌اند و تسریع تحویل قابلیت‌ها",
+            "ایجاد مسیر عملی برای توزیع app-like بدون دوپاره کردن سطح محصول",
+            "بهبود واکنش‌گرایی و یکپارچگی تجربه در دسکتاپ و موبایل"
+          ],
+          scale: [
+            "پلتفرم SaaS در حال بهره‌برداری",
+            "مسیر تحویل مشترک وب و اندروید",
+            "نوسازی تدریجی در بستر یک محصول زنده"
+          ],
+          visuals: [
+            {kind: "pwa", label: "PWA", src: "/projects/hoofer/responsive-grid.png"},
+            {kind: "pwa", label: "PWA", src: "/projects/hoofer/responsive-data-input.png"},
           ]
         }
       ]

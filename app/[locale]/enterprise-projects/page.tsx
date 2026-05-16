@@ -2,11 +2,11 @@ import type {Metadata} from "next";
 import {notFound} from "next/navigation";
 
 import {Navbar} from "@/components/navbar";
-import {FooterSection} from "@/sections/footer";
-import {EnterpriseProjectsPage} from "@/sections/enterprise-projects-page";
 import {getPortfolioContent} from "@/data/portfolio";
 import {siteConfig} from "@/data/site";
 import {isValidLocale} from "@/lib/i18n";
+import {FooterSection} from "@/sections/footer";
+import {EnterpriseProjectsPage} from "@/sections/enterprise-projects-page";
 
 export async function generateMetadata({
   params
@@ -20,10 +20,7 @@ export async function generateMetadata({
   }
 
   const content = getPortfolioContent(locale);
-  const title =
-    locale === "fa"
-      ? "پروژه‌های سازمانی | حامد پارسا"
-      : "Enterprise Projects | Hamed Parsa";
+  const title = locale === "fa" ? "پروژه‌های سازمانی | حامد پارسا" : "Enterprise Projects | Hamed Parsa";
   const description = content.enterpriseProjects.recruiterIntro;
 
   return {
@@ -68,6 +65,7 @@ export default async function EnterpriseProjectsRoute({
         locale={content.locale}
         languageLabel={content.languageLabel}
         contactLabel={content.contact.eyebrow}
+        resumeLabel={content.hero.ctaResume}
         anchorBasePath={`/${content.locale}`}
       />
       <EnterpriseProjectsPage locale={content.locale} content={content.enterpriseProjects} />

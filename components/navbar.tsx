@@ -12,10 +12,11 @@ type NavbarProps = {
   locale: Locale;
   languageLabel: string;
   contactLabel: string;
+  resumeLabel: string;
   anchorBasePath?: string;
 };
 
-export function Navbar({brand, nav, locale, languageLabel, contactLabel, anchorBasePath = ""}: NavbarProps) {
+export function Navbar({brand, nav, locale, languageLabel, contactLabel, resumeLabel, anchorBasePath = ""}: NavbarProps) {
   return (
     <header className="sticky top-0 z-50 border-b border-white/6 bg-[rgba(11,15,25,0.82)] backdrop-blur-xl">
       <div className="shell flex flex-col gap-4 py-4 md:flex-row md:items-center md:justify-between">
@@ -25,6 +26,11 @@ export function Navbar({brand, nav, locale, languageLabel, contactLabel, anchorB
           </Link>
           <div className="flex items-center gap-2 md:hidden">
             <LanguageSwitcher locale={locale} label={languageLabel} />
+            <Button asChild variant="outline" size="sm">
+              <a href="/Hamed-Parsa-Resume.pdf" target="_blank" rel="noreferrer">
+                {resumeLabel}
+              </a>
+            </Button>
           </div>
         </div>
         <div className="flex flex-col gap-4 md:flex-row md:items-center">
@@ -53,6 +59,11 @@ export function Navbar({brand, nav, locale, languageLabel, contactLabel, anchorB
           </nav>
           <div className="hidden items-center gap-2 md:flex">
             <LanguageSwitcher locale={locale} label={languageLabel} />
+            <Button asChild variant="outline" size="sm">
+              <a href="/Hamed-Parsa-Resume.pdf" target="_blank" rel="noreferrer">
+                {resumeLabel}
+              </a>
+            </Button>
             <Button asChild variant="outline" size="sm">
               <a href={`${anchorBasePath}#contact`}>{contactLabel}</a>
             </Button>

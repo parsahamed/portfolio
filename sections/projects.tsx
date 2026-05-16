@@ -1,6 +1,7 @@
 import {ArrowUpRight} from "lucide-react";
 
 import {AnimatedReveal} from "@/components/animated-reveal";
+import {ProjectThumbnail} from "@/components/project-visuals";
 import {SectionHeading} from "@/components/section-heading";
 import {Badge} from "@/components/ui/badge";
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
@@ -22,6 +23,7 @@ export function ProjectsSection({content}: ProjectsSectionProps) {
             <AnimatedReveal key={project.title} delay={index * 0.06}>
               <Card className="h-full">
                 <CardHeader className="space-y-4">
+                  <ProjectThumbnail projectName={project.title} visuals={project.visuals} />
                   <div className="flex items-start justify-between gap-4">
                     <CardTitle className="text-2xl">{project.title}</CardTitle>
                     <ArrowUpRight className="mt-1 h-5 w-5 text-[var(--color-text-secondary)]" />

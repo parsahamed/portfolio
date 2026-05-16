@@ -28,6 +28,27 @@ export type ProjectItem = {
   architecture: string[];
   technologies: string[];
   achievements: string[];
+  visuals?: ProjectVisual[];
+};
+
+export type ProjectVisualKind =
+  | "dashboard"
+  | "architecture"
+  | "workflow"
+  | "mobile"
+  | "forms"
+  | "realtime"
+  | "chat"
+  | "impact"
+  | "legacy"
+  | "pwa"
+  | "android"
+  | "responsive";
+
+export type ProjectVisual = {
+  kind: ProjectVisualKind;
+  label: string;
+  src: string;
 };
 
 export type EnterpriseProject = {
@@ -40,6 +61,8 @@ export type EnterpriseProject = {
   businessImpact: string[];
   scale: string[];
   measuredOutcomes?: string[];
+  visuals?: ProjectVisual[];
+  visualHighlights?: string[];
 };
 
 export type SkillCategory = {
@@ -109,6 +132,8 @@ export type PortfolioContent = {
       businessImpact: string;
       scale: string;
       measuredOutcomes: string;
+      visualEvidence: string;
+      visualHighlights: string;
     };
     items: EnterpriseProject[];
   };

@@ -2,6 +2,7 @@ import Link from "next/link";
 import {ArrowLeft, ArrowRight, BriefcaseBusiness} from "lucide-react";
 
 import {AnimatedReveal} from "@/components/animated-reveal";
+import {VisualEvidenceGrid} from "@/components/project-visuals";
 import {SectionHeading} from "@/components/section-heading";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
@@ -110,6 +111,23 @@ export function EnterpriseProjectsPage({locale, content}: EnterpriseProjectsPage
                       ))}
                     </ul>
                   </div>
+                  {project.visualHighlights ? (
+                    <div className="space-y-3">
+                      <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-accent)]">
+                        {content.labels.visualHighlights}
+                      </div>
+                      <div className="grid gap-3 sm:grid-cols-2">
+                        {project.visualHighlights.map((item) => (
+                          <div
+                            key={item}
+                            className="rounded-2xl border border-[rgba(59,130,246,0.18)] bg-[rgba(59,130,246,0.08)] p-4 text-sm leading-6 text-[var(--color-text-primary)]"
+                          >
+                            {item}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
                   {project.measuredOutcomes ? (
                     <div className="space-y-3">
                       <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-accent)]">
@@ -125,6 +143,14 @@ export function EnterpriseProjectsPage({locale, content}: EnterpriseProjectsPage
                           </div>
                         ))}
                       </div>
+                    </div>
+                  ) : null}
+                  {project.visuals ? (
+                    <div className="space-y-4 md:col-span-2 xl:col-span-3">
+                      <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-accent)]">
+                        {content.labels.visualEvidence}
+                      </div>
+                      <VisualEvidenceGrid projectName={project.title} visuals={project.visuals} />
                     </div>
                   ) : null}
                   <div className="space-y-3 md:col-span-2 xl:col-span-3">
