@@ -1,6 +1,8 @@
 "use client";
 
+import type {Route} from "next";
 import Link from "next/link";
+import {usePathname} from "next/navigation";
 
 import {getAlternateLocale, type Locale} from "@/lib/i18n";
 
@@ -10,8 +12,9 @@ type LanguageSwitcherProps = {
 };
 
 export function LanguageSwitcher({locale, label}: LanguageSwitcherProps) {
+  const pathname = usePathname();
   const alternateLocale = getAlternateLocale(locale);
-  const localizedPath = `/${alternateLocale}` as const;
+  const localizedPath = pathname.replace(`/${locale}`, `/${alternateLocale}`) as Route;
 
   return (
     <Link

@@ -12,6 +12,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
     nav: [
       {href: "#about", label: "About"},
       {href: "#experience", label: "Experience"},
+      {href: "/en/enterprise-projects", label: "Enterprise Projects"},
       {href: "#projects", label: "Projects"},
       {href: "#skills", label: "Skills"},
       {href: "#philosophy", label: "Philosophy"},
@@ -24,6 +25,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         "20+ years building enterprise platforms, industrial systems, AI-powered products, BI solutions, and scalable web applications.",
       ctaPrimary: "View Projects",
       ctaSecondary: "Contact Me",
+      ctaResume: "Download Resume",
       stats: [
         {value: "20+", label: "Years shipping production software"},
         {value: "24/7", label: "Operational systems designed for reliability"},
@@ -122,21 +124,26 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
       title: "Selected systems built for complexity, scale, and sustained use",
       description:
         "These projects were shaped by operational constraints, architectural longevity, and the need for clean product execution.",
+      labels: {
+        architecture: "Architecture Highlights",
+        technologies: "Technologies",
+        achievements: "Key Achievements"
+      },
       items: [
         {
           title: "Industrial Production Management Platform",
           description:
-            "An industrial-grade operational platform serving 400+ users in a 24/7 production environment with real-time visibility across workflows and reporting.",
+            "An industrial operations platform built for 400+ users in a 24/7 environment, combining workflow execution, real-time coordination, dashboards, reporting, and configurable operational tooling.",
           architecture: [
-            "Real-time dashboards and reporting surfaces",
-            "Dynamic forms and configurable workflow states",
-            "Embedded collaboration and chat for operational coordination"
+            "ReactJS client connected to Node.js web services and Socket.IO hubs for live operational updates",
+            "Microservices and message broker patterns supporting workflow orchestration, event propagation, and extensibility",
+            "Dynamic forms, reporting surfaces, dashboard designer, and embedded chat/collaboration inside production processes"
           ],
-          technologies: ["Angular", "TypeScript", "ASP.NET", "SignalR", "SQL Server", "Reporting"],
+          technologies: ["ReactJS", "Node.js", "Socket.IO", "Message Broker", "Microservices", "PostgreSQL", "Reporting"],
           achievements: [
-            "Supported 24/7 operations with multi-role workflows",
-            "Centralized reporting, data capture, and process visibility",
-            "Reduced fragmentation across operational tools"
+            "Supported 24/7 operations with multi-role workflows across production teams",
+            "Unified data capture, reporting, dashboarding, and collaboration in one operational platform",
+            "Reduced fragmentation between execution systems, monitoring tools, and communication channels"
           ]
         },
         {
@@ -144,9 +151,9 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           description:
             "A collaborative process management platform combining workflow actions, document organization, and communication patterns inspired by chat-first systems.",
           architecture: [
-            "Action-driven workflow engine",
-            "Telegram-like communication model inside operational context",
-            "Document organization structured around business processes"
+            "Action-driven workflow engine for configurable business processes",
+            "Telegram-like communication model embedded inside operational context",
+            "Document organization structured around business process state and accountability"
           ],
           technologies: ["Angular", "RxJS", "Node.js", "REST APIs", "PostgreSQL"],
           achievements: [
@@ -160,9 +167,9 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           description:
             "A national-scale aggregation and scoring system integrating multiple data sources into dashboards, monitoring views, and evaluation pipelines.",
           architecture: [
-            "API aggregation with resilient retry mechanisms",
-            "Scoring engine and KPI normalization pipeline",
-            "Dashboard framework for national monitoring"
+            "API aggregation with resilient retry mechanisms and scheduled synchronization",
+            "Scoring engine and KPI normalization pipeline across heterogeneous data sources",
+            "Dashboard framework for national monitoring, performance review, and decision support"
           ],
           technologies: ["C#", "Web APIs", "Schedulers", "Dashboarding", "SQL Server"],
           achievements: [
@@ -177,7 +184,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "A telecom-scale digital product operating inside a large enterprise ecosystem with high expectations around reliability, integration, and frontend architecture.",
           architecture: [
             "Frontend architecture aligned with a large microservices landscape",
-            "Enterprise integrations across telecom capabilities",
+            "Enterprise integrations across telecom capabilities and backend services",
             "Scalable UI delivery for a widely used consumer platform"
           ],
           technologies: ["Angular", "TypeScript", "Microservices", "Enterprise APIs", "CI/CD"],
@@ -185,6 +192,177 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "Contributed to a large-scale telecom product with significant reach",
             "Supported architecture and frontend team leadership",
             "Helped build connected product experiences in a complex enterprise setting"
+          ]
+        }
+      ]
+    },
+    enterpriseProjects: {
+      eyebrow: "Enterprise Projects",
+      title: "Enterprise, process, and operational software case studies",
+      description:
+        "A focused view of projects relevant to employers looking for enterprise workflows, operational platforms, BI systems, and architecture-heavy delivery.",
+      recruiterIntro:
+        "These case studies summarize selected enterprise, workflow, BI, and operational software projects I designed, led, or implemented across utility, refinery, telecom, and SaaS environments.",
+      backToHome: "Back to Home",
+      labels: {
+        problem: "Problem",
+        role: "My Role",
+        architecture: "Architecture",
+        keyFeatures: "Key Features",
+        technologies: "Technologies",
+        businessImpact: "Business Impact",
+        scale: "Scale"
+      },
+      items: [
+        {
+          title: "Industrial Production Management Platform",
+          problem:
+            "Industrial production teams were relying on fragmented tools for process tracking, coordination, reporting, and operational visibility, making round-the-clock execution harder to manage.",
+          role:
+            "I designed and implemented major parts of the platform architecture and product structure, shaping the operational workflows, real-time communication model, and extensible foundation for future modules.",
+          architecture: [
+            "ReactJS client application for production operators, supervisors, and managers",
+            "Node.js application services and Socket.IO hubs for live state synchronization",
+            "Message broker and microservices approach for event-driven workflow, notifications, and subsystem decoupling",
+            "Dynamic forms engine, reporting pipeline, dashboard designer, and embedded collaboration layer"
+          ],
+          keyFeatures: [
+            "Workflow-driven operational process management",
+            "Real-time monitoring dashboards and reporting",
+            "Dashboard designer for tailored operational views",
+            "Dynamic forms for different process stages and departments",
+            "Built-in chat and collaboration around process execution"
+          ],
+          technologies: ["ReactJS", "Node.js", "Socket.IO", "Message Broker", "Microservices", "PostgreSQL", "Reporting"],
+          businessImpact: [
+            "Centralized core operational workflows into a single platform",
+            "Improved production visibility and accountability across roles",
+            "Reduced dependence on disconnected spreadsheets, messaging, and manual follow-up"
+          ],
+          scale: [
+            "400+ active users",
+            "24/7 industrial operation",
+            "Multi-role usage across production and management"
+          ]
+        },
+        {
+          title: "FarGasht Workflow Platform",
+          problem:
+            "Teams needed a more usable process management system that could combine actions, documents, collaboration, and workflow state without forcing users to jump between disconnected tools.",
+          role:
+            "I led the product and technical design of the workflow model, collaboration patterns, and implementation approach, with a strong focus on usability in operational contexts.",
+          architecture: [
+            "Workflow engine organized around action-oriented process steps",
+            "Integrated communication model similar to chat-first collaboration tools",
+            "Document organization aligned to process context and participant responsibilities"
+          ],
+          keyFeatures: [
+            "Collaborative workflow execution",
+            "Process actions and approvals",
+            "Contextual messaging and discussion threads",
+            "Document organization by workflow and case",
+            "Operational visibility for follow-up and accountability"
+          ],
+          technologies: ["Angular", "RxJS", "Node.js", "REST APIs", "PostgreSQL"],
+          businessImpact: [
+            "Improved process clarity and follow-up across teams",
+            "Made workflow software more approachable for non-technical users",
+            "Reduced friction between communication and execution"
+          ],
+          scale: [
+            "Cross-team workflow platform",
+            "Used for process-heavy operational collaboration",
+            "Designed for extensible business process growth"
+          ]
+        },
+        {
+          title: "National KPI Aggregation Platform / SIMA / SEKAN",
+          problem:
+            "National KPI programs required reliable aggregation of data from multiple systems, but the upstream integrations were inconsistent, delayed, and operationally hard to monitor.",
+          role:
+            "I led architecture and implementation for the aggregation, scoring, and dashboard layers, including resilience patterns for unstable integrations.",
+          architecture: [
+            "API aggregation services with retry and scheduled synchronization patterns",
+            "Normalization and scoring pipeline for KPI evaluation",
+            "Dashboard and monitoring layer for national reporting and oversight"
+          ],
+          keyFeatures: [
+            "National-scale KPI aggregation",
+            "Resilient data collection and retry mechanisms",
+            "Scoring and evaluation engine",
+            "Management dashboards and performance reporting",
+            "Monitoring tools for data quality and integration health"
+          ],
+          technologies: ["C#", "Web APIs", "Schedulers", "SQL Server", "Dashboarding"],
+          businessImpact: [
+            "Enabled nationwide KPI reporting across multiple contributing systems",
+            "Improved resilience against unstable or delayed upstream APIs",
+            "Provided clearer insight for management and policy oversight"
+          ],
+          scale: [
+            "National reporting scope",
+            "Multiple integrated data providers",
+            "High-visibility management and governance use"
+          ]
+        },
+        {
+          title: "CRM Platform based on Microsoft Dynamics 365",
+          problem:
+            "Customer-facing and internal business units needed structured CRM workflows, better traceability, and integration with surrounding operational systems rather than a disconnected CRM deployment.",
+          role:
+            "I worked on architecture, customization strategy, and surrounding integration patterns to align the CRM platform with enterprise process requirements.",
+          architecture: [
+            "Dynamics 365-centered CRM workflows integrated with surrounding enterprise systems",
+            "Custom business process modeling, automation, and reporting extensions",
+            "Integration layer for syncing operational data and customer lifecycle events"
+          ],
+          keyFeatures: [
+            "CRM workflow customization",
+            "Lead, case, and relationship management support",
+            "Reporting and visibility for business teams",
+            "Process automation around customer-facing operations",
+            "Integration with enterprise data and supporting systems"
+          ],
+          technologies: ["Microsoft Dynamics 365", "C#", "REST APIs", "SQL Server", "Reporting"],
+          businessImpact: [
+            "Aligned CRM usage with actual enterprise process needs",
+            "Improved traceability and reporting across business workflows",
+            "Reduced manual handoffs between CRM and adjacent systems"
+          ],
+          scale: [
+            "Enterprise business workflow support",
+            "Multiple business stakeholders and process owners",
+            "Long-term extensibility around operational needs"
+          ]
+        },
+        {
+          title: "Business Intelligence Dashboards for Utility and Refinery Companies",
+          problem:
+            "Operational and executive teams needed clearer visibility into business and industrial metrics, but reporting was slow, fragmented, and hard to trust for decision-making.",
+          role:
+            "I designed and implemented BI dashboards and reporting structures that translated operational data into decision-ready management views.",
+          architecture: [
+            "BI-oriented reporting and dashboard architecture across operational data sources",
+            "Data shaping and KPI modeling for domain-specific management needs",
+            "Visualization surfaces tailored for monitoring, analysis, and follow-up"
+          ],
+          keyFeatures: [
+            "Executive and operational dashboards",
+            "KPI tracking and trend analysis",
+            "Management reporting for utility and refinery environments",
+            "Drill-down visibility for operational follow-up",
+            "Custom data views aligned with business questions"
+          ],
+          technologies: ["BI Tooling", "SQL Server", "Dashboarding", "Reporting Services", "Data Modeling"],
+          businessImpact: [
+            "Improved decision speed with clearer operational visibility",
+            "Standardized reporting surfaces across teams",
+            "Made KPIs more usable for real management follow-up"
+          ],
+          scale: [
+            "Utility and refinery business domains",
+            "Management and operations stakeholders",
+            "Ongoing reporting and dashboard consumption"
           ]
         }
       ]
@@ -198,7 +376,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         {title: "Frontend", skills: ["Angular", "React", "Next.js", "TypeScript", "RxJS", "TailwindCSS"]},
         {title: "Backend", skills: ["NestJS", "Node.js", "Python", "C#", "REST APIs", "Workflow Engines"]},
         {title: "Architecture", skills: ["Microservices", "Domain Modeling", "Enterprise Architecture", "BI", "Integration Design", "Scalable Platforms"]},
-        {title: "Cloud & Infrastructure", skills: ["CI/CD", "Docker", "Linux", "Message-Driven Systems", "Observability"]},
+        {title: "Cloud & Infrastructure", skills: ["CI/CD", "Docker", "Linux", "RabbitMQ", "Observability"]},
         {title: "Databases", skills: ["PostgreSQL", "MongoDB", "SQL Server", "Redis", "Reporting Data Models"]},
         {title: "Leadership", skills: ["Technical Strategy", "Team Leadership", "Mentoring", "Delivery Discipline", "Cross-Functional Collaboration"]}
       ]
@@ -222,12 +400,14 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
       description:
         "If you are building a product, modernizing a platform, or need an engineer who can move between architecture and implementation, let's talk.",
       cta: "Open to remote senior engineering roles, architecture consulting, and product collaboration.",
+      ctaConversation: "Start a Conversation",
+      ctaResume: "Download Resume",
       links: [
-        {label: "LinkedIn", href: siteConfig.links.linkedin, value: "Connect professionally"},
-        {label: "GitHub", href: siteConfig.links.github, value: "View code and experiments"},
-        {label: "Medium", href: siteConfig.links.medium, value: "Read technical writing"},
-        {label: "Virgool", href: siteConfig.links.virgool, value: "Read technical writing in persian"},
-        {label: "Email", href: siteConfig.email, value: "parsa.hmd@gmail.com"}
+        {kind: "linkedin", label: "LinkedIn", href: siteConfig.links.linkedin, value: "Connect professionally"},
+        {kind: "github", label: "GitHub", href: siteConfig.links.github, value: "View code and experiments"},
+        {kind: "medium", label: "Medium", href: siteConfig.links.medium, value: "Read technical writing"},
+        {kind: "virgool", label: "Virgool", href: siteConfig.links.virgool, value: "Read technical writing in Persian"},
+        {kind: "email", label: "Email", href: siteConfig.email, value: "parsa.hmd@gmail.com"}
       ]
     },
     footer: {
@@ -245,6 +425,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
     nav: [
       {href: "#about", label: "درباره من"},
       {href: "#experience", label: "تجربه"},
+      {href: "/fa/enterprise-projects", label: "پروژه‌های سازمانی"},
       {href: "#projects", label: "پروژه‌ها"},
       {href: "#skills", label: "مهارت‌ها"},
       {href: "#philosophy", label: "نگرش فنی"},
@@ -257,10 +438,11 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         "بیش از ۲۰ سال تجربه در ساخت پلتفرم‌های سازمانی، سامانه‌های صنعتی، محصولات مبتنی بر هوش مصنوعی، راهکارهای BI و اپلیکیشن‌های وب مقیاس‌پذیر.",
       ctaPrimary: "مشاهده پروژه‌ها",
       ctaSecondary: "ارتباط با من",
+      ctaResume: "دانلود رزومه",
       stats: [
         {value: "+۲۰", label: "سال تجربه در توسعه نرم‌افزارهای عملیاتی"},
-        {value: "۲۴/۷", label: "طراحی سامانه‌های پایدار برای عملیات مداوم"},
-        {value: "Enterprise", label: "معماری مبتنی بر مقیاس، پایداری و نگهداشت‌پذیری"}
+        {value: "24/7", label: "طراحی سامانه‌های پایدار برای عملیات مداوم"},
+        {value: "سازمانی", label: "معماری مبتنی بر مقیاس، پایداری و نگهداشت‌پذیری"}
       ]
     },
     about: {
@@ -312,7 +494,15 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           achievements: [
             "پیاده‌سازی پلتفرم‌های BI، داشبوردها، CRM و موتورهای Workflow",
             "توسعه پلتفرم مدیریت تولید برای محیط‌های صنعتی",
-            "تمرکز بر نرم‌افزار عملیاتی، گزارش‌گیری، فرم‌ها، همکاری و توسعه‌پذیری سامانه",
+            "تمرکز بر نرم‌افزار عملیاتی، گزارش‌گیری، فرم‌ها، همکاری و توسعه‌پذیری سامانه"
+          ]
+        },
+        {
+          company: "پلتفرم‌های ملی KPI",
+          role: "معمار · مهندس ارشد",
+          summary:
+            "رهبری معماری و پیاده‌سازی سامانه‌های تجمیع و امتیازدهی KPI در مقیاس ملی.",
+          achievements: [
             "توسعه سامانه‌های سکان و سیما برای گزارش‌گیری ملی",
             "طراحی جریان‌های یکپارچه‌سازی API، مکانیزم‌های Retry و منطق امتیازدهی",
             "ساخت داشبوردهای پایش و تحلیل در مقیاس کلان"
@@ -347,21 +537,26 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
       title: "نمونه‌هایی از سامانه‌هایی که برای پیچیدگی، مقیاس و استفاده مستمر ساخته شده‌اند",
       description:
         "این پروژه‌ها بر پایه محدودیت‌های عملیاتی، ماندگاری معماری و اجرای دقیق محصول شکل گرفته‌اند.",
+      labels: {
+        architecture: "نکات معماری",
+        technologies: "فناوری‌ها",
+        achievements: "دستاوردهای کلیدی"
+      },
       items: [
         {
           title: "پلتفرم مدیریت تولید صنعتی",
           description:
-            "یک پلتفرم عملیاتی صنعتی برای بیش از ۴۰۰ کاربر در محیط 24/7 با دید لحظه‌ای روی گردش‌کارها و گزارش‌گیری.",
+            "یک پلتفرم عملیاتی صنعتی برای بیش از ۴۰۰ کاربر در محیط 24/7 که Workflow، گزارش‌گیری، داشبورد، ابزارهای پویا و همکاری لحظه‌ای را در یک بستر واحد متمرکز می‌کند.",
           architecture: [
-            "داشبوردها و سطوح گزارش‌گیری بلادرنگ",
-            "فرم‌های پویا و وضعیت‌های قابل پیکربندی Workflow",
-            "همکاری درون‌سامانه‌ای و چت برای هماهنگی عملیات"
+            "کلاینت ReactJS همراه با سرویس‌های Node.js و هاب‌های Socket.IO برای به‌روزرسانی زنده وضعیت عملیات",
+            "الگوی Microservices و Message Broker برای اجرای Workflow، رویدادها و توسعه‌پذیری زیرسامانه‌ها",
+            "موتور فرم‌های پویا، گزارش‌گیری، Dashboard Designer و لایه چت و همکاری در بطن فرایندهای تولید"
           ],
-          technologies: ["Angular", "TypeScript", "ASP.NET", "SignalR", "SQL Server", "Reporting"],
+          technologies: ["ReactJS", "Node.js", "Socket.IO", "Message Broker", "Microservices", "PostgreSQL", "Reporting"],
           achievements: [
-            "پشتیبانی از عملیات 24/7 با Workflowهای چندنقشی",
-            "یکپارچه‌سازی گزارش‌گیری، ثبت داده و شفافیت فرایند",
-            "کاهش پراکندگی ابزارهای عملیاتی"
+            "پشتیبانی از عملیات 24/7 با Workflowهای چندنقشی در مقیاس صنعتی",
+            "یکپارچه‌سازی ثبت داده، گزارش‌گیری، داشبوردسازی و همکاری تیمی در یک پلتفرم",
+            "کاهش پراکندگی بین ابزارهای اجرا، مانیتورینگ و ارتباطات عملیاتی"
           ]
         },
         {
@@ -369,9 +564,9 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           description:
             "یک سامانه مدیریت فرایند مشارکتی با ترکیب Workflow، سازمان‌دهی اسناد و الگوهای ارتباطی شبیه پیام‌رسان‌ها.",
           architecture: [
-            "موتور Workflow مبتنی بر Action",
-            "مدل ارتباطی شبیه تلگرام در بستر عملیات",
-            "سازمان‌دهی اسناد مبتنی بر فرایندهای کسب‌وکار"
+            "موتور Workflow مبتنی بر Action برای فرایندهای قابل تنظیم",
+            "مدل ارتباطی شبیه تلگرام در بستر عملیات و وظایف",
+            "سازمان‌دهی اسناد مبتنی بر وضعیت فرایند و مسئولیت افراد"
           ],
           technologies: ["Angular", "RxJS", "Node.js", "REST APIs", "PostgreSQL"],
           achievements: [
@@ -381,13 +576,13 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
           ]
         },
         {
-          title: "پلتفرم سیما برای توانیر",
+          title: "پلتفرم ملی تجمیع KPI",
           description:
             "سامانه‌ای در مقیاس ملی برای تجمیع، امتیازدهی و نمایش داده‌های چندمنبعه در داشبوردها و جریان‌های ارزیابی.",
           architecture: [
-            "تجمیع API با مکانیزم‌های مقاوم Retry",
-            "موتور امتیازدهی و نرمال‌سازی KPI",
-            "فریم‌ورک داشبورد برای پایش ملی"
+            "سرویس‌های تجمیع API با مکانیزم‌های Retry و همگام‌سازی زمان‌بندی‌شده",
+            "خط پردازش نرمال‌سازی و امتیازدهی KPI بین منابع داده ناهمگون",
+            "چارچوب داشبورد برای پایش ملی، ارزیابی عملکرد و تصمیم‌سازی"
           ],
           technologies: ["C#", "Web APIs", "Schedulers", "Dashboarding", "SQL Server"],
           achievements: [
@@ -402,7 +597,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "محصولی در مقیاس مخابرات با استقرار در یک اکوسیستم سازمانی بزرگ و نیاز جدی به پایداری، یکپارچه‌سازی و معماری فرانت‌اند.",
           architecture: [
             "معماری فرانت‌اند هماهنگ با اکوسیستم بزرگ Microservices",
-            "یکپارچه‌سازی‌های سازمانی در قابلیت‌های مخابراتی",
+            "یکپارچه‌سازی‌های سازمانی در قابلیت‌های مخابراتی و سرویس‌های پشت‌صحنه",
             "تحویل رابط کاربری مقیاس‌پذیر برای یک محصول پرکاربر"
           ],
           technologies: ["Angular", "TypeScript", "Microservices", "Enterprise APIs", "CI/CD"],
@@ -410,6 +605,177 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
             "مشارکت در محصولی مخابراتی با مقیاس مصرف‌کننده",
             "پشتیبانی از معماری و رهبری تیم فرانت‌اند",
             "ساخت تجربه‌های متصل در یک بستر سازمانی پیچیده"
+          ]
+        }
+      ]
+    },
+    enterpriseProjects: {
+      eyebrow: "پروژه‌های سازمانی",
+      title: "نمونه‌کارهای نرم‌افزارهای سازمانی، فرآیندی و عملیاتی",
+      description:
+        "مروری متمرکز بر پروژه‌هایی که برای کارفرمایانِ دنبال‌کننده نرم‌افزارهای سازمانی، Workflow، BI و سامانه‌های عملیاتی مرتبط‌تر هستند.",
+      recruiterIntro:
+        "این نمونه‌کارها بخشی از پروژه‌های سازمانی، فرآیندی، هوش تجاری و عملیاتی هستند که در صنایع برق، پالایشگاه، مخابرات و SaaS طراحی، رهبری یا پیاده‌سازی کرده‌ام.",
+      backToHome: "بازگشت به خانه",
+      labels: {
+        problem: "مسئله",
+        role: "نقش من",
+        architecture: "معماری",
+        keyFeatures: "قابلیت‌های کلیدی",
+        technologies: "فناوری‌ها",
+        businessImpact: "اثر کسب‌وکاری",
+        scale: "مقیاس"
+      },
+      items: [
+        {
+          title: "پلتفرم مدیریت تولید صنعتی",
+          problem:
+            "تیم‌های تولید صنعتی برای پیگیری فرایند، هماهنگی، گزارش‌گیری و دید عملیاتی به ابزارهای پراکنده متکی بودند و مدیریت اجرای شبانه‌روزی دشوار شده بود.",
+          role:
+            "من بخش‌های مهمی از معماری و ساختار محصول را طراحی و پیاده‌سازی کردم و مدل Workflow، ارتباطات لحظه‌ای و زیرساخت توسعه‌پذیر پلتفرم را شکل دادم.",
+          architecture: [
+            "اپلیکیشن ReactJS برای اپراتورها، سرپرستان و مدیران تولید",
+            "سرویس‌های Node.js و هاب‌های Socket.IO برای همگام‌سازی زنده وضعیت‌ها",
+            "رویکرد Message Broker و Microservices برای اجرای Event-Driven، اعلان‌ها و جداسازی زیرسامانه‌ها",
+            "موتور فرم‌های پویا، زنجیره گزارش‌گیری، Dashboard Designer و لایه همکاری درون‌سامانه‌ای"
+          ],
+          keyFeatures: [
+            "مدیریت فرایندهای عملیاتی مبتنی بر Workflow",
+            "داشبوردها و گزارش‌گیری بلادرنگ",
+            "Dashboard Designer برای نماهای اختصاصی عملیاتی",
+            "فرم‌های پویا برای مراحل مختلف فرایند و واحدها",
+            "چت و همکاری درون‌سامانه‌ای حول اجرای عملیات"
+          ],
+          technologies: ["ReactJS", "Node.js", "Socket.IO", "Message Broker", "Microservices", "PostgreSQL", "Reporting"],
+          businessImpact: [
+            "متمرکزسازی Workflowهای اصلی عملیات در یک پلتفرم واحد",
+            "افزایش شفافیت و پاسخ‌گویی در اجرای تولید",
+            "کاهش وابستگی به فایل‌های پراکنده، پیام‌رسان‌ها و پیگیری دستی"
+          ],
+          scale: [
+            "بیش از ۴۰۰ کاربر فعال",
+            "عملیات صنعتی 24/7",
+            "استفاده چندنقشی در سطوح تولید و مدیریت"
+          ]
+        },
+        {
+          title: "پلتفرم Workflow فرگشت",
+          problem:
+            "تیم‌ها به یک سامانه مدیریت فرایند قابل‌استفاده‌تر نیاز داشتند که بتواند اقدامات، اسناد، همکاری و وضعیت Workflow را بدون پرش بین ابزارهای مختلف یکپارچه کند.",
+          role:
+            "من طراحی محصول و فنی مدل Workflow، الگوهای همکاری و رویکرد پیاده‌سازی را با تمرکز بر تجربه کاربری در بسترهای عملیاتی هدایت کردم.",
+          architecture: [
+            "موتور Workflow مبتنی بر گام‌ها و Actionهای فرایندی",
+            "مدل ارتباطی یکپارچه شبیه ابزارهای Chat-First",
+            "سازمان‌دهی اسناد در متن فرایند و مسئولیت افراد"
+          ],
+          keyFeatures: [
+            "اجرای مشارکتی Workflow",
+            "اقدامات، ارجاع‌ها و تاییدها",
+            "پیام‌رسانی و گفتگوهای Contextual",
+            "سازمان‌دهی اسناد بر اساس فرایند و پرونده",
+            "دید پیگیری و پاسخ‌گویی برای عملیات"
+          ],
+          technologies: ["Angular", "RxJS", "Node.js", "REST APIs", "PostgreSQL"],
+          businessImpact: [
+            "افزایش شفافیت فرایند و پیگیری بین تیم‌ها",
+            "کاربرپسندتر شدن نرم‌افزار Workflow برای کاربران غیر فنی",
+            "کاهش اصطکاک بین ارتباطات و اجرای فرایند"
+          ],
+          scale: [
+            "پلتفرم Workflow بین‌تیمی",
+            "مناسب برای همکاری‌های فرایندمحور",
+            "طراحی‌شده برای رشد تدریجی فرایندهای کسب‌وکار"
+          ]
+        },
+        {
+          title: "پلتفرم ملی تجمیع KPI / سیما / سکان",
+          problem:
+            "برنامه‌های ملی KPI به تجمیع پایدار داده از چندین سامانه نیاز داشتند، اما یکپارچه‌سازی‌های بالادستی ناپایدار، تاخیردار و از نظر عملیاتی دشوار برای پایش بودند.",
+          role:
+            "من معماری و پیاده‌سازی لایه‌های تجمیع، امتیازدهی و داشبورد را رهبری کردم و الگوهای مقاوم برای یکپارچه‌سازی‌های ناپایدار را طراحی کردم.",
+          architecture: [
+            "سرویس‌های تجمیع API با الگوهای Retry و همگام‌سازی زمان‌بندی‌شده",
+            "خط نرمال‌سازی و امتیازدهی برای ارزیابی KPI",
+            "لایه داشبورد و مانیتورینگ برای گزارش‌گیری ملی و نظارت"
+          ],
+          keyFeatures: [
+            "تجمیع KPI در مقیاس ملی",
+            "جمع‌آوری داده مقاوم در برابر خطا",
+            "موتور امتیازدهی و ارزیابی",
+            "داشبوردهای مدیریتی و گزارش‌گیری عملکرد",
+            "پایش کیفیت داده و سلامت یکپارچه‌سازی‌ها"
+          ],
+          technologies: ["C#", "Web APIs", "Schedulers", "SQL Server", "Dashboarding"],
+          businessImpact: [
+            "ایجاد بستر گزارش‌گیری KPI در سطح ملی",
+            "افزایش تاب‌آوری در برابر APIهای ناپایدار یا تاخیردار",
+            "ارائه دید شفاف‌تر برای مدیریت و نظارت سیاست‌گذارانه"
+          ],
+          scale: [
+            "دامنه ملی",
+            "چندین ارائه‌دهنده داده یکپارچه‌شده",
+            "استفاده مدیریتی با حساسیت بالا"
+          ]
+        },
+        {
+          title: "پلتفرم CRM مبتنی بر Microsoft Dynamics 365",
+          problem:
+            "واحدهای کسب‌وکار و ارتباط با مشتری به Workflowهای ساخت‌یافته‌تر، رهگیری بهتر و اتصال CRM به سامانه‌های عملیاتی اطراف نیاز داشتند؛ نه یک استقرار جداافتاده CRM.",
+          role:
+            "من روی معماری، استراتژی سفارشی‌سازی و الگوهای یکپارچه‌سازی پیرامونی کار کردم تا پلتفرم CRM با نیازهای فرایندی سازمان همسو شود.",
+          architecture: [
+            "Workflowهای CRM مبتنی بر Dynamics 365 همراه با اتصال به سامانه‌های پیرامونی",
+            "مدل‌سازی فرایندهای کسب‌وکار، Automation و توسعه گزارش‌ها",
+            "لایه Integration برای همگام‌سازی داده‌های عملیاتی و رویدادهای چرخه عمر مشتری"
+          ],
+          keyFeatures: [
+            "سفارشی‌سازی Workflowهای CRM",
+            "پشتیبانی از Lead، Case و Relationship Management",
+            "گزارش‌گیری و شفافیت برای تیم‌های کسب‌وکار",
+            "اتوماسیون فرایندهای مرتبط با عملیات مشتری",
+            "یکپارچه‌سازی با داده‌ها و سامانه‌های سازمانی"
+          ],
+          technologies: ["Microsoft Dynamics 365", "C#", "REST APIs", "SQL Server", "Reporting"],
+          businessImpact: [
+            "همسوسازی استفاده از CRM با نیازهای واقعی فرایندهای سازمانی",
+            "بهبود رهگیری و گزارش‌گیری در Workflowهای کسب‌وکار",
+            "کاهش جابه‌جایی دستی بین CRM و سامانه‌های پیرامونی"
+          ],
+          scale: [
+            "پشتیبانی از Workflowهای کسب‌وکار سازمانی",
+            "ذی‌نفعان و مالکان فرایند متعدد",
+            "توسعه‌پذیری بلندمدت بر مبنای نیازهای عملیاتی"
+          ]
+        },
+        {
+          title: "داشبوردهای هوش تجاری برای شرکت‌های برق و پالایشگاهی",
+          problem:
+            "تیم‌های عملیاتی و مدیریتی به دید شفاف‌تری روی شاخص‌ها نیاز داشتند، اما گزارش‌گیری کند، پراکنده و برای تصمیم‌گیری کمتر قابل اتکا بود.",
+          role:
+            "من ساختار داشبوردها و گزارش‌های BI را طراحی و پیاده‌سازی کردم تا داده‌های عملیاتی به نماهای قابل استفاده برای تصمیم‌گیری تبدیل شوند.",
+          architecture: [
+            "معماری گزارش‌گیری و داشبورد BI روی منابع داده عملیاتی",
+            "شکل‌دهی داده و مدل‌سازی KPI متناسب با نیازهای دامنه",
+            "سطوح نمایش مخصوص پایش، تحلیل و پیگیری مدیریتی"
+          ],
+          keyFeatures: [
+            "داشبوردهای مدیریتی و عملیاتی",
+            "پیگیری KPI و تحلیل روند",
+            "گزارش‌گیری برای محیط‌های برق و پالایشگاه",
+            "Drill-down برای پیگیری عملیاتی",
+            "نماهای سفارشی متناسب با پرسش‌های کسب‌وکار"
+          ],
+          technologies: ["BI Tooling", "SQL Server", "Dashboarding", "Reporting Services", "Data Modeling"],
+          businessImpact: [
+            "افزایش سرعت تصمیم‌گیری با دید عملیاتی روشن‌تر",
+            "استانداردسازی سطوح گزارش‌گیری بین تیم‌ها",
+            "کاربردی‌تر شدن KPIها برای پیگیری مدیریتی واقعی"
+          ],
+          scale: [
+            "دامنه‌های برق و پالایشگاه",
+            "ذی‌نفعان مدیریتی و عملیاتی",
+            "مصرف مستمر داشبورد و گزارش"
           ]
         }
       ]
@@ -423,7 +789,7 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
         {title: "فرانت‌اند", skills: ["Angular", "React", "Next.js", "TypeScript", "RxJS", "TailwindCSS"]},
         {title: "بک‌اند", skills: ["NestJS", "Node.js", "Python", "C#", "REST APIs", "Workflow Engines"]},
         {title: "معماری", skills: ["Microservices", "Domain Modeling", "Enterprise Architecture", "BI", "Integration Design", "Scalable Platforms"]},
-        {title: "زیرساخت و عملیات", skills: ["CI/CD", "Docker", "Linux", "Message-Driven Systems", "Observability"]},
+        {title: "زیرساخت و عملیات", skills: ["CI/CD", "Docker", "Linux", "RabbitMQ", "Observability"]},
         {title: "دیتابیس", skills: ["PostgreSQL", "MongoDB", "SQL Server", "Redis", "Reporting Data Models"]},
         {title: "رهبری", skills: ["Technical Strategy", "Team Leadership", "Mentoring", "Delivery Discipline", "Cross-Functional Collaboration"]}
       ]
@@ -447,12 +813,14 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
       description:
         "اگر در حال ساخت محصول، نوسازی یک پلتفرم یا نیازمند مهندسی هستید که بین معماری و اجرا حرکت کند، خوشحال می‌شوم گفتگو کنیم.",
       cta: "برای نقش‌های ارشد ریموت، مشاوره معماری و همکاری محصول آماده هستم.",
+      ctaConversation: "شروع گفتگو",
+      ctaResume: "دانلود رزومه",
       links: [
-        {label: "LinkedIn", href: siteConfig.links.linkedin, value: "ارتباط حرفه‌ای"},
-        {label: "GitHub", href: siteConfig.links.github, value: "مشاهده کد و تجربه‌ها"},
-        {label: "Medium", href: siteConfig.links.medium, value: "مطالعه نوشته‌های فنی"},
-        {label: "Virgool", href: siteConfig.links.virgool, value: "مطالعه نوشته‌های فنی به زیان فارسی"},
-        {label: "Email", href: siteConfig.email, value: "parsa.hmd@gmail.com"},
+        {kind: "linkedin", label: "لینکدین", href: siteConfig.links.linkedin, value: "ارتباط حرفه‌ای"},
+        {kind: "github", label: "گیت‌هاب", href: siteConfig.links.github, value: "مشاهده کد و تجربه‌ها"},
+        {kind: "medium", label: "مدیوم", href: siteConfig.links.medium, value: "مطالعه نوشته‌های فنی"},
+        {kind: "virgool", label: "ویرگول", href: siteConfig.links.virgool, value: "مطالعه نوشته‌های فنی به زبان فارسی"},
+        {kind: "email", label: "ایمیل", href: siteConfig.email, value: "parsa.hmd@gmail.com"}
       ]
     },
     footer: {
@@ -466,4 +834,3 @@ const portfolioContent: Record<Locale, PortfolioContent> = {
 export function getPortfolioContent(locale: Locale) {
   return portfolioContent[locale];
 }
-

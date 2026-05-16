@@ -40,6 +40,11 @@ export function HeroSection({content}: HeroSectionProps) {
                 <Button asChild size="lg" variant="outline">
                   <a href="#contact">{content.ctaSecondary}</a>
                 </Button>
+                <Button asChild size="lg" variant="outline">
+                  <a href="/Hamed-Parsa-Resume.pdf" target="_blank" rel="noreferrer">
+                    {content.ctaResume}
+                  </a>
+                </Button>
               </div>
             </AnimatedReveal>
             <AnimatedReveal delay={0.08}>
@@ -60,4 +65,3 @@ export function HeroSection({content}: HeroSectionProps) {
     </section>
   );
 }
-

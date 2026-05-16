@@ -6,10 +6,11 @@ import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/compo
 import type {PortfolioContent} from "@/types/content";
 
 const iconMap = {
-  LinkedIn: Linkedin,
-  GitHub: Github,
-  Medium: PenSquare,
-  Email: Mail
+  linkedin: Linkedin,
+  github: Github,
+  medium: PenSquare,
+  virgool: PenSquare,
+  email: Mail
 };
 
 type ContactSectionProps = {
@@ -30,16 +31,29 @@ export function ContactSection({content}: ContactSectionProps) {
                 <div className="rounded-2xl border border-[rgba(59,130,246,0.24)] bg-[rgba(59,130,246,0.10)] p-5 text-sm leading-7 text-[var(--color-text-primary)]">
                   {content.cta}
                 </div>
-                <Button asChild size="lg">
-                  <a href={content.links.find((item) => item.label === "Email")?.href ?? "#"}>Start a Conversation</a>
-                </Button>
+                <div className="flex flex-col gap-3 sm:flex-row">
+                  <Button asChild size="lg">
+                    <a href={content.links.find((item) => item.kind === "email")?.href ?? "#"}>{content.ctaConversation}</a>
+                  </Button>
+                  <Button asChild size="lg" variant="outline">
+                    <a href="/Hamed-Parsa-Resume.pdf" target="_blank" rel="noreferrer">
+                      {content.ctaResume}
+                    </a>
+                  </Button>
+                </div>
               </div>
               <div className="grid gap-4">
                 {content.links.map((link) => {
-                  const Icon = iconMap[link.label as keyof typeof iconMap] ?? Mail;
+                  const Icon = iconMap[link.kind] ?? Mail;
 
                   return (
-                    <a key={link.label} href={link.href} target="_blank" rel="noreferrer" className="block">
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      target={link.kind === "email" ? undefined : "_blank"}
+                      rel={link.kind === "email" ? undefined : "noreferrer"}
+                      className="block"
+                    >
                       <Card className="h-full border-white/10 hover:border-white/18 hover:bg-white/[0.04]">
                         <CardHeader className="flex-row items-center justify-between space-y-0">
                           <div className="space-y-2">
@@ -60,4 +74,3 @@ export function ContactSection({content}: ContactSectionProps) {
     </section>
   );
 }
-

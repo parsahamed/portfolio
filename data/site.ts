@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Hamed Parsa",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://hamedparsa.dev",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://parsahmd.vercel.app/",
   email: "mailto:parsa.hmd@gmail.com",
   links: {
     github: "https://github.com/parsahamed",

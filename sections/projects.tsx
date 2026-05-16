@@ -31,7 +31,7 @@ export function ProjectsSection({content}: ProjectsSectionProps) {
                 <CardContent className="space-y-6">
                   <div className="space-y-3">
                     <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-accent)]">
-                      Architecture Highlights
+                      {content.labels.architecture}
                     </div>
                     <ul className="grid gap-3 text-sm leading-6 text-[var(--color-text-secondary)]">
                       {project.architecture.map((item) => (
@@ -44,7 +44,7 @@ export function ProjectsSection({content}: ProjectsSectionProps) {
                   </div>
                   <div className="space-y-3">
                     <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-accent)]">
-                      Technologies
+                      {content.labels.technologies}
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((technology) => (
@@ -54,7 +54,7 @@ export function ProjectsSection({content}: ProjectsSectionProps) {
                   </div>
                   <div className="space-y-3">
                     <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-accent)]">
-                      Key Achievements
+                      {content.labels.achievements}
                     </div>
                     <ul className="grid gap-3 text-sm leading-6 text-[var(--color-text-secondary)]">
                       {project.achievements.map((achievement) => (
@@ -74,4 +74,3 @@ export function ProjectsSection({content}: ProjectsSectionProps) {
     </section>
   );
 }
-

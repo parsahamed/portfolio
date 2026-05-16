@@ -1,3 +1,4 @@
+import type {Route} from "next";
 import Link from "next/link";
 
 import {LanguageSwitcher} from "@/components/language-switcher";
@@ -11,9 +12,10 @@ type NavbarProps = {
   locale: Locale;
   languageLabel: string;
   contactLabel: string;
+  anchorBasePath?: string;
 };
 
-export function Navbar({brand, nav, locale, languageLabel, contactLabel}: NavbarProps) {
+export function Navbar({brand, nav, locale, languageLabel, contactLabel, anchorBasePath = ""}: NavbarProps) {
   return (
     <header className="sticky top-0 z-50 border-b border-white/6 bg-[rgba(11,15,25,0.82)] backdrop-blur-xl">
       <div className="shell flex flex-col gap-4 py-4 md:flex-row md:items-center md:justify-between">
@@ -30,12 +32,21 @@ export function Navbar({brand, nav, locale, languageLabel, contactLabel}: Navbar
             <ul className="flex min-w-max items-center gap-2 text-sm text-[var(--color-text-secondary)]">
               {nav.map((item) => (
                 <li key={item.href}>
-                  <a
-                    href={item.href}
-                    className="inline-flex rounded-full px-3 py-2 hover:bg-white/[0.04] hover:text-[var(--color-text-primary)]"
-                  >
-                    {item.label}
-                  </a>
+                  {item.href.startsWith("/") ? (
+                    <Link
+                      href={item.href as Route}
+                      className="inline-flex rounded-full px-3 py-2 hover:bg-white/[0.04] hover:text-[var(--color-text-primary)]"
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={`${anchorBasePath}${item.href}`}
+                      className="inline-flex rounded-full px-3 py-2 hover:bg-white/[0.04] hover:text-[var(--color-text-primary)]"
+                    >
+                      {item.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -43,7 +54,7 @@ export function Navbar({brand, nav, locale, languageLabel, contactLabel}: Navbar
           <div className="hidden items-center gap-2 md:flex">
             <LanguageSwitcher locale={locale} label={languageLabel} />
             <Button asChild variant="outline" size="sm">
-              <a href="#contact">{contactLabel}</a>
+              <a href={`${anchorBasePath}#contact`}>{contactLabel}</a>
             </Button>
           </div>
         </div>
@@ -51,4 +62,3 @@ export function Navbar({brand, nav, locale, languageLabel, contactLabel}: Navbar
     </header>
   );
 }
-

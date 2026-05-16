@@ -30,12 +30,26 @@ export type ProjectItem = {
   achievements: string[];
 };
 
+export type EnterpriseProject = {
+  title: string;
+  problem: string;
+  role: string;
+  architecture: string[];
+  keyFeatures: string[];
+  technologies: string[];
+  businessImpact: string[];
+  scale: string[];
+};
+
 export type SkillCategory = {
   title: string;
   skills: string[];
 };
 
+export type ContactLinkKind = "linkedin" | "github" | "medium" | "virgool" | "email";
+
 export type ContactLink = {
+  kind: ContactLinkKind;
   label: string;
   href: string;
   value: string;
@@ -53,6 +67,7 @@ export type PortfolioContent = {
     subheadline: string;
     ctaPrimary: string;
     ctaSecondary: string;
+    ctaResume: string;
     stats: Stat[];
   };
   about: {
@@ -71,7 +86,29 @@ export type PortfolioContent = {
     eyebrow: string;
     title: string;
     description: string;
+    labels: {
+      architecture: string;
+      technologies: string;
+      achievements: string;
+    };
     items: ProjectItem[];
+  };
+  enterpriseProjects: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    recruiterIntro: string;
+    backToHome: string;
+    labels: {
+      problem: string;
+      role: string;
+      architecture: string;
+      keyFeatures: string;
+      technologies: string;
+      businessImpact: string;
+      scale: string;
+    };
+    items: EnterpriseProject[];
   };
   skills: {
     eyebrow: string;
@@ -90,6 +127,8 @@ export type PortfolioContent = {
     title: string;
     description: string;
     cta: string;
+    ctaConversation: string;
+    ctaResume: string;
     links: ContactLink[];
   };
   footer: {
@@ -98,4 +137,3 @@ export type PortfolioContent = {
   };
   languageLabel: string;
 };
-
